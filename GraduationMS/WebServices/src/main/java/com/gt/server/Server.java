@@ -21,13 +21,13 @@ public class Server {
 
         try {
             while (true) {
-                String console="com.gt.server.shell>";
+                String console = "com.gt.server.shell>";
                 os.write(console.getBytes());
                 BufferedReader br = new BufferedReader(new InputStreamReader(is));
                 String inputStr = br.readLine();
                 os.write(inputStr.getBytes());
 
-                if(inputStr.toUpperCase().equals("EXIT")){
+                if (inputStr.toUpperCase().equals("EXIT")) {
                     os.write(("Exiting...").getBytes());
                     break;
                 }
