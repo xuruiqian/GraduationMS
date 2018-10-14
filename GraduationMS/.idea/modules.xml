@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/Services/Services.iml" filepath="$PROJECT_DIR$/Services/Services.iml" />
       <module fileurl="file://$PROJECT_DIR$/Springmvc/Springmvc.iml" filepath="$PROJECT_DIR$/Springmvc/Springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
     </modules>
   </component>
 </project>

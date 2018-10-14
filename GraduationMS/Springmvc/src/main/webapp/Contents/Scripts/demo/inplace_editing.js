@@ -22,7 +22,7 @@ $(function(){
         url: '/status',
         status: 500,
         response: function(settings) {
-            this.responseText = 'Internal Server Error';
+            this.responseText = 'Internal server Error';
             log(settings, this);
         }
     });
