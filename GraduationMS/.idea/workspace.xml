@@ -7,22 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_ws_jaxws_api_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/WebServices.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/client/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/contract/IHelloService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/implementation/HelloService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebServices/src/main/resources/springContext.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Springmvc/src/main/webapp/Contents/Scripts/demo/inplace_editing.js" afterPath="$PROJECT_DIR$/Springmvc/src/main/webapp/Contents/Scripts/demo/inplace_editing.js" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/WebServices/src/main/resources/springContext.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -128,23 +114,13 @@
       <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/implementation/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#416#417#0" expanded="true" />
                 <element signature="e#459#460#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="springContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebServices/src/main/resources/springContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -162,7 +138,7 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
+            <state relative-caret-position="568">
               <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -401,6 +377,93 @@
             <path>
               <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServices" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="gt" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -962,7 +1025,7 @@
       <workItem from="1539399034854" duration="1077000" />
       <workItem from="1539499486395" duration="6046000" />
       <workItem from="1539520300330" duration="5294000" />
-      <workItem from="1539526173975" duration="5820000" />
+      <workItem from="1539526173975" duration="5932000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -985,7 +1048,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539526686789</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update web services">
+      <created>1539532144379</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539532144379</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1021,7 +1091,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86477000" />
+    <option name="totallyTimeSpent" value="86589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
@@ -1113,7 +1183,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Trim back space." />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update web services" />
+    <option name="LAST_COMMIT_MESSAGE" value="update web services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1433,32 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebServices/src/main/resources/springContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1500,6 +1545,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/client/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/contract/IHelloService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1512,13 +1575,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/implementation/HelloService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#416#417#0" expanded="true" />
             <element signature="e#459#460#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebServices/src/main/resources/springContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
