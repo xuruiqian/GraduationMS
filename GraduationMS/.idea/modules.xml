@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Activemq/Activemq.iml" filepath="$PROJECT_DIR$/Infrastructure/Activemq/Activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" filepath="$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" filepath="$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataRepository/DataRepository.iml" filepath="$PROJECT_DIR$/DataRepository/DataRepository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GraduationMS.iml" filepath="$PROJECT_DIR$/GraduationMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Infrastructure.iml" filepath="$PROJECT_DIR$/Infrastructure/Infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Log/Log.iml" filepath="$PROJECT_DIR$/Infrastructure/Log/Log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" filepath="$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Security/Security.iml" filepath="$PROJECT_DIR$/Infrastructure/Security/Security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Services/Services.iml" filepath="$PROJECT_DIR$/Services/Services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Springmvc/Springmvc.iml" filepath="$PROJECT_DIR$/Springmvc/Springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,5 @@
+2018-10-14 21:59:41 [ main:0 ] - [ DEBUG ] This is debug!
+2018-10-14 21:59:41 [ main:1 ] - [ INFO ] This is info!
+2018-10-14 21:59:41 [ main:2 ] - [ WARN ] This is warn!
+2018-10-14 21:59:41 [ main:2 ] - [ ERROR ] This is error!
+2018-10-14 21:59:41 [ main:2 ] - [ FATAL ] This is fatal!
