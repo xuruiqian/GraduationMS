@@ -12,9 +12,8 @@ public class Server {
         OutputStream os = System.out;
 
         try {
-            //create and publish an endPoint
             IHelloService hello = new HelloService();
-            Endpoint endPoint = Endpoint.publish("http://localhost:8080/hw", hello);
+//            Endpoint endPoint = Endpoint.publish("http://localhost:8080/hw", hello);
         } catch (Exception e) {
             e.printStackTrace();
         }
