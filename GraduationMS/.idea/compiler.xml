@@ -6,18 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="activemq" />
         <module name="Activemq" />
-        <module name="audittrial" />
+        <module name="activemq" />
+        <module name="activemqdemo" />
         <module name="Audittrial" />
+        <module name="audittrial" />
         <module name="Configuration" />
         <module name="configuration" />
         <module name="DataRepository" />
+        <module name="hibernatebasicdemo" />
         <module name="Infrastructure" />
         <module name="log" />
         <module name="Log" />
-        <module name="Logback" />
         <module name="logback" />
+        <module name="Logback" />
+        <module name="mybatisbasicdemo" />
         <module name="Security" />
         <module name="security" />
         <module name="Services" />
@@ -28,8 +31,9 @@
         <module name="springbootdemo" />
         <module name="springdemo" />
         <module name="springicodemo" />
-        <module name="Springmvc" />
         <module name="springmvc" />
+        <module name="Springmvc" />
+        <module name="springmvcdemo" />
         <module name="Utilities" />
         <module name="utilities" />
         <module name="WebServices" />
@@ -38,6 +42,7 @@
     <bytecodeTargetLevel>
       <module name="activemq" target="1.6" />
       <module name="Activemq" target="1.6" />
+      <module name="activemqdemo" target="1.7" />
       <module name="audittrial" target="1.5" />
       <module name="Audittrial" target="1.7" />
       <module name="com.gt" target="1.5" />
@@ -51,12 +56,14 @@
       <module name="DataRepository" target="1.7" />
       <module name="GraduationMS" target="1.7" />
       <module name="gt.demo" target="1.7" />
+      <module name="hibernatebasicdemo" target="1.7" />
       <module name="Infrastructure" target="1.7" />
       <module name="log" target="1.5" />
       <module name="Log" target="1.7" />
       <module name="logback" target="1.5" />
       <module name="Logback" target="1.7" />
       <module name="model" target="1.5" />
+      <module name="mybatisbasicdemo" target="1.7" />
       <module name="Security" target="1.7" />
       <module name="security" target="1.5" />
       <module name="service" target="1.5" />
@@ -70,6 +77,7 @@
       <module name="springicodemo" target="1.7" />
       <module name="springmvc" target="1.8" />
       <module name="Springmvc" target="1.8" />
+      <module name="springmvcdemo" target="1.7" />
       <module name="srpingmvc" target="1.5" />
       <module name="utilities" target="1.5" />
       <module name="Utilities" target="1.7" />

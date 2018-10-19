@@ -15,10 +15,14 @@
       <module fileurl="file://$PROJECT_DIR$/Springmvc/Springmvc.iml" filepath="$PROJECT_DIR$/Springmvc/Springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activemqdemo/activemqdemo.iml" filepath="$PROJECT_DIR$/activemqdemo/activemqdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" filepath="$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" filepath="$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaopdemo/springaopdemo.iml" filepath="$PROJECT_DIR$/springaopdemo/springaopdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbasicdemo/springbasicdemo.iml" filepath="$PROJECT_DIR$/springbasicdemo/springbasicdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbeandemo/springbeandemo.iml" filepath="$PROJECT_DIR$/springbeandemo/springbeandemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" filepath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />
     </modules>
   </component>
 </project>

@@ -17,6 +17,10 @@
         <module>springbootdemo</module>
         <module>springbasicdemo</module>
         <module>springaopdemo</module>
+        <module>springmvcdemo</module>
+        <module>hibernatebasicdemo</module>
+        <module>mybatisbasicdemo</module>
+        <module>activemqdemo</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
