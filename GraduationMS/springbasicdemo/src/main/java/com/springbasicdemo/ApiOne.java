@@ -1,4 +1,4 @@
-package com.springdemo;
+package com.springbasicdemo;
 
 public class ApiOne implements Api {
     @Override
