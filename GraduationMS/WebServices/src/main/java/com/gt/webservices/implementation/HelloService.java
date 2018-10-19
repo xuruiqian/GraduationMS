@@ -3,6 +3,9 @@ package com.gt.webservices.implementation;
 
 import com.gt.webservices.contract.IHelloService;
 
+import javax.jws.WebMethod;
+import javax.jws.WebParam;
+import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 import org.junit.Test;

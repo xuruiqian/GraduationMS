@@ -13,7 +13,7 @@ public class Server {
 
         try {
             IHelloService hello = new HelloService();
-//            Endpoint endPoint = Endpoint.publish("http://localhost:8080/hw", hello);
+            Endpoint endPoint = Endpoint.publish("http://localhost:8080/hw", hello);
         } catch (Exception e) {
             e.printStackTrace();
         }

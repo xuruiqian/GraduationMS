@@ -15,6 +15,9 @@
       <module fileurl="file://$PROJECT_DIR$/Springmvc/Springmvc.iml" filepath="$PROJECT_DIR$/Springmvc/Springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springicodemo/springicodemo.iml" filepath="$PROJECT_DIR$/springicodemo/springicodemo.iml" />
     </modules>
   </component>
 </project>

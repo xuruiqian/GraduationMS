@@ -13,6 +13,9 @@
         <module>DataRepository</module>
         <module>Services</module>
         <module>WebServices</module>
+        <module>springdemo</module>
+        <module>springicodemo</module>
+        <module>springbootdemo</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
