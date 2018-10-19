@@ -13,7 +13,7 @@
         <module>DataRepository</module>
         <module>Services</module>
         <module>WebServices</module>
-        <module>springdemo</module>
+        <module>springbasic</module>
         <module>springbeandemo</module>
         <module>springbootdemo</module>
     </modules>
