@@ -7,47 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_main_javaee_api_javax_jws_3_1_2_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Logs/myApp.log.2018-10-19.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springbootdemo/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/springdemo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/springdemo/Api.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/springdemo/ApiOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/springdemo/ApiTwo.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/src/main/java/com/springdemo/Client.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springdemo/src/main/resources/applicationContext.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/springicodemo.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/src/main/java/com/springicodemo/services/HelloService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/src/main/java/com/springicodemo/services/SpringTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/src/main/java/com/springicodemo/services/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springicodemo/src/main/resources/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/GraduationMS/WebServices/Logs/myApp.log.2018-10-15.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/WebServices/WebServices.iml" afterPath="$PROJECT_DIR$/WebServices/WebServices.iml" />
-      <change beforePath="$PROJECT_DIR$/WebServices/pom.xml" afterPath="$PROJECT_DIR$/WebServices/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/server/Server.java" />
-      <change beforePath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/contract/IHelloService.java" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/contract/IHelloService.java" />
-      <change beforePath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/implementation/HelloService.java" afterPath="$PROJECT_DIR$/WebServices/src/main/java/com/gt/webservices/implementation/HelloService.java" />
       <change beforePath="$PROJECT_DIR$/WebServices/target/classes/com/gt/server/Server.class" afterPath="$PROJECT_DIR$/WebServices/target/classes/com/gt/server/Server.class" />
       <change beforePath="$PROJECT_DIR$/WebServices/target/classes/com/gt/webservices/contract/IHelloService.class" afterPath="$PROJECT_DIR$/WebServices/target/classes/com/gt/webservices/contract/IHelloService.class" />
       <change beforePath="$PROJECT_DIR$/WebServices/target/classes/com/gt/webservices/implementation/HelloService.class" afterPath="$PROJECT_DIR$/WebServices/target/classes/com/gt/webservices/implementation/HelloService.class" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -998,7 +961,7 @@
       <workItem from="1539577609762" duration="1580000" />
       <workItem from="1539753533708" duration="907000" />
       <workItem from="1539847787590" duration="208000" />
-      <workItem from="1539910045389" duration="4820000" />
+      <workItem from="1539910045389" duration="4882000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -1070,7 +1033,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539578015407</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update">
+      <created>1539916072679</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1539916072679</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1106,7 +1076,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98126000" />
+    <option name="totallyTimeSpent" value="98188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="748" height="777" extended-state="0" />
@@ -1134,7 +1104,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34751773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2593583" sideWeight="0.4846885" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2593583" sideWeight="0.4846885" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13333334" sideWeight="0.51531154" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
