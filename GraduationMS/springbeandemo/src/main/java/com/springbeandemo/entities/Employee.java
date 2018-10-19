@@ -1,4 +1,4 @@
-package com.springicodemo.entities;
+package com.springbeandemo.entities;
 
 public class Employee {
     private String name;
@@ -14,5 +14,12 @@ public class Employee {
     }
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Employee() {}
+    public Employee(String name, int id) {
+        System.out.println("Employee(String name, int age) 函数被调用..");
+        this.name = name;
+        this.id = id;
     }
 }

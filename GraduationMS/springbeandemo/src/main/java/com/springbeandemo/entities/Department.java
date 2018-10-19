@@ -1,4 +1,4 @@
-package com.springicodemo.entities;
+package com.springbeandemo.entities;
 
 import java.util.List;
 import java.util.Map;

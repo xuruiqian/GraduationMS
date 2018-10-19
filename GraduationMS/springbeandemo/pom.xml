@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springicodemo</artifactId>
+    <artifactId>springbeandemo</artifactId>
     <dependencies>
         <!-- spring相关jar包 -->
         <dependency>

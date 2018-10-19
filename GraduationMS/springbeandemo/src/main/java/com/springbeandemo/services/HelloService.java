@@ -1,4 +1,4 @@
-package com.springicodemo.services;
+package com.springbeandemo.services;
 
 public class HelloService {
     private String name;

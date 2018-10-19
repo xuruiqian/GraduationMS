@@ -10,26 +10,26 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-    <bean name="userService" class="com.springicodemo.services.UserService" scope="singleton">
+    <bean name="userService" class="com.springbeandemo.services.UserService" scope="singleton">
         <property name="name">
             <value>I'm userService from myself.</value>
         </property>
         <property name="helloService" ref="helloService"></property>
     </bean>
-    <bean name="helloService" class="com.springicodemo.services.HelloService" scope="prototype">
+    <bean name="helloService" class="com.springbeandemo.services.HelloService" scope="prototype">
         <property name="name">
             <value>I'm HelloService from UserService instance.</value>
         </property>
     </bean>
-    <bean name="emp1" class="com.springicodemo.entities.Employee">
+    <bean name="emp1" class="com.springbeandemo.entities.Employee">
         <property name="name" value="taojian"></property>
         <property name="id" value="1"></property>
     </bean>
-    <bean name="emp2" class="com.springicodemo.entities.Employee">
+    <bean name="emp2" class="com.springbeandemo.entities.Employee">
         <property name="name" value="tao"></property>
         <property name="id" value="2"></property>
     </bean>
-    <bean name="department1" class="com.springicodemo.entities.Department">
+    <bean name="department1" class="com.springbeandemo.entities.Department">
         <property name="empList">
             <list>
                 <ref bean="emp1"></ref>
@@ -44,7 +44,7 @@
             </list>
         </property>
     </bean>
-    <bean name="department2" class="com.springicodemo.entities.Department">
+    <bean name="department2" class="com.springbeandemo.entities.Department">
         <property name="empsets">
             <set>
                 <ref bean="emp1"></ref>
@@ -59,7 +59,7 @@
             </set>
         </property>
     </bean>
-    <bean name="department3" class="com.springicodemo.entities.Department">
+    <bean name="department3" class="com.springbeandemo.entities.Department">
         <property name="empMaps">
             <map>
                 <entry key="11" value-ref="emp1"></entry>
@@ -69,12 +69,17 @@
             </map>
         </property>
     </bean>
-    <bean name="department4" class="com.springicodemo.entities.Department">
+    <bean name="department4" class="com.springbeandemo.entities.Department">
         <property name="pp">
             <props>
                 <prop key="pp1">abcd</prop>
                 <prop key="pp2">hello</prop>
             </props>
         </property>
+    </bean>
+
+    <bean name="employee3" class="com.springbeandemo.entities.Employee">
+        <constructor-arg  index="0" type="java.lang.String" value="Firsts Properties"/>
+        <constructor-arg index="1" type="int" value="1"></constructor-arg>
     </bean>
 </beans>
