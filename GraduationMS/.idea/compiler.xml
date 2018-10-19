@@ -21,6 +21,7 @@
         <module name="Security" />
         <module name="security" />
         <module name="Services" />
+        <module name="springaopdemo" />
         <module name="springbasic" />
         <module name="springbasicdemo" />
         <module name="springbeandemo" />
@@ -60,6 +61,7 @@
       <module name="security" target="1.5" />
       <module name="service" target="1.5" />
       <module name="Services" target="1.7" />
+      <module name="springaopdemo" target="1.7" />
       <module name="springbasic" target="1.7" />
       <module name="springbasicdemo" target="1.7" />
       <module name="springbeandemo" target="1.7" />
