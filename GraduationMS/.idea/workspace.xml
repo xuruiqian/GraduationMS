@@ -7,27 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/30abbac3-4f33-41aa-9914-c0728fe02c65.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_0_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/HomeController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/applicationContext.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/db.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/jdbc.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/log4j.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/springmvc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Index.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Springmvc_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Springmvc_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springmvcdemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvcdemo_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/pom.xml" afterPath="$PROJECT_DIR$/springmvcdemo/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" afterPath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/index.jsp" afterPath="$PROJECT_DIR$/springmvcdemo/web/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -159,8 +140,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springmvcdemo/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+            <state relative-caret-position="570">
+              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -854,7 +835,7 @@
       <workItem from="1539847787590" duration="208000" />
       <workItem from="1539910045389" duration="8066000" />
       <workItem from="1539919768948" duration="15368000" />
-      <workItem from="1540024492612" duration="9200000" />
+      <workItem from="1540024492612" duration="9525000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -1017,7 +998,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540039747678</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update">
+      <created>1540046560234</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1540046560234</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1053,13 +1041,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125940000" />
+    <option name="totallyTimeSpent" value="126265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55602837" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25815603" sideWeight="0.5053061" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1070,7 +1058,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25815603" sideWeight="0.49791667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.670922" sideWeight="0.49469388" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24666667" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1217,6 +1205,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1761,8 +1750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvcdemo/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        <state relative-caret-position="570">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding />
         </state>
       </provider>
