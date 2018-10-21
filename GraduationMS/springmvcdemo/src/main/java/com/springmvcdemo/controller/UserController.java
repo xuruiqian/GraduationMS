@@ -1,20 +1,29 @@
 package com.springmvcdemo.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.springmvcdemo.entity.User;
+import com.springmvcdemo.service.contract.IUserService;
+import com.springmvcdemo.service.implementation.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.junit.Before;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/user")
-public class UserController {
+public class UserController extends ControllerBase{
 
     private static List<User> userList;
 
@@ -57,5 +66,22 @@ public class UserController {
             }
         }
         return "loginForm";
+    }
+
+    @RequestMapping(value = "summary", method = RequestMethod.GET)
+    public ModelAndView UserSummary() {
+        applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        IUserService us = (UserService) applicationContext.getBean("userService");
+        List<User> userList = us.GetUserList();
+        System.out.println("applicationContext: " + us);
+        for (User user : userList) {
+            System.out.println(user);
+            System.out.println("LoginName: " + user.getLoginname()
+                    + ",Password: " + user.getPassword()
+                    + ",UserName: " + user.getUsername());
+        }
+        Map<String,List<User>> data = new HashMap<String,List<User>>();
+        data.put("userList",userList);
+        return  new ModelAndView("User/Summary",data);
     }
 }
