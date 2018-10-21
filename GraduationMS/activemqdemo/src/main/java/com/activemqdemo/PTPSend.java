@@ -59,7 +59,7 @@ public class PTPSend {
             producer.setDeliveryMode(DeliveryMode.PERSISTENT);
 
             //创建一条消息，当然，消息的类型有很多，如文字，字节，对象等,可以通过session.create..方法来创建出来
-            TextMessage textMsg = session.createTextMessage("hhhh");
+            TextMessage textMsg = session.createTextMessage("hhhh88");
             for(int i = 0 ; i < 100 ; i ++){
                 //发送一条消息
                 producer.send(textMsg);
