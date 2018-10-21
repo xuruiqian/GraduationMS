@@ -605,7 +605,8 @@
                                 <a href="#" class="btn btn-white hidden-phone">Last month</a>
                                 <a href="#" class="btn btn-white">Last week</a>
                                 <a href="#" class="btn btn-white ">Today</a>
-                                <a href="#" class="btn btn-white" id="daterange"><i class='icon-calendar'></i>
+                                <a href="#" class="btn btn-white" id="daterange">
+                                    <i class='icon-calendar'></i>
                                     <span class='hidden-phone'>Custom</span>
                                     <b class='caret'></b>
                                 </a>
@@ -860,17 +861,17 @@
                                     </div>
                                     <div class='box-content box-no-padding'>
                                         <div class='sortable-container'>
-                                            <form accept-charset="UTF-8" action="#" class="new-todo" method="post"/>
-                                            <div style="margin:0;padding:0;display:inline"><input name="utf8"
-                                                                                                  type="hidden"
-                                                                                                  value="&#x2713;"/><input
-                                                    name="authenticity_token" type="hidden"
-                                                    value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/></div>
-                                            <input class='span12' id='todo_name' name='todo[name]'
-                                                   placeholder='Type your new todo here...' type='text'/>
-                                            <button class='btn btn-success' type='submit'>
-                                                <i class='icon-plus'></i>
-                                            </button>
+                                            <form accept-charset="UTF-8" action="#" class="new-todo" method="post">
+                                                <div style="margin:0;padding:0;display:inline">
+                                                    <input name="utf8" type="hidden" value="&#x2713;"/>
+                                                    <input name="authenticity_token" type="hidden"
+                                                           value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/>
+                                                </div>
+                                                <input class='span12' id='todo_name' name='todo[name]'
+                                                       placeholder='Type your new todo here...' type='text'/>
+                                                <button class='btn btn-success' type='submit'>
+                                                    <i class='icon-plus'></i>
+                                                </button>
                                             </form>
                                             <div class='date text-contrast'>Today</div>
                                             <ul class='unstyled sortable' data-sortable-axis='y'
@@ -1652,16 +1653,17 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <form accept-charset="UTF-8" action="#" class="new-message" method="post"/>
-                                        <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden"
-                                                                                              value="&#x2713;"/><input
-                                                name="authenticity_token" type="hidden"
-                                                value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/></div>
-                                        <input class='span12' id='message_body' name='message[body]'
-                                               placeholder='Type your message here...' type='text'/>
-                                        <button class='btn btn-success' type='submit'>
-                                            <i class='icon-plus'></i>
-                                        </button>
+                                        <form accept-charset="UTF-8" action="#" class="new-message" method="post">
+                                            <div style="margin:0;padding:0;display:inline">
+                                                <input name="utf8" type="hidden" value="&#x2713;"/>
+                                                <input name="authenticity_token" type="hidden"
+                                                       value="CFC7d00LWKQsSahRqsfD+e/mHLqbaVIXBvlBGe/KP+I="/>
+                                            </div>
+                                            <input class='span12' id='message_body' name='message[body]'
+                                                   placeholder='Type your message here...' type='text'/>
+                                            <button class='btn btn-success' type='submit'>
+                                                <i class='icon-plus'></i>
+                                            </button>
                                         </form>
                                     </div>
                                 </div>
@@ -1676,11 +1678,10 @@
                                             Quick e-mail
                                         </div>
                                         <div class='actions'>
-                                            <a href="#" class="btn box-remove btn-mini btn-link"><i
-                                                    class='icon-remove'></i>
+                                            <a href="#" class="btn box-remove btn-mini btn-link">
+                                                <i class='icon-remove'></i>
                                             </a>
-                                            <a href="#" class="btn box-collapse btn-mini btn-link"><i></i>
-                                            </a>
+                                            <a href="#" class="btn box-collapse btn-mini btn-link"><i></i></a>
                                         </div>
                                     </div>
                                     <div class='box-content'>
@@ -1688,7 +1689,7 @@
                                                value=""/>
                                         <textarea class="span12 wysihtml5" cols="40" id="body_" name="body[]"
                                                   placeholder="Your message..." rows="5">
-                </textarea>
+                                        </textarea>
                                         <div class='text-right'>
                                             <a href="#" class="btn btn-primary">Send</a>
                                         </div>
@@ -1745,9 +1746,9 @@
                                         <ul class='unstyled tasks'>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Cras sed tellus velit</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                        <a href='#'>Cras sed tellus velit</a>
+                                                    </span>
                                                     <small class='pull-right'>40%</small>
                                                 </div>
                                                 <div class='progress progress-small'>
@@ -1756,9 +1757,9 @@
                                             </li>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Quis posuere tortor - maecenas in risus</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                        <a href='#'>Quis posuere tortor - maecenas in risus</a>
+                                                    </span>
                                                     <small class='pull-right'>80%</small>
                                                 </div>
                                                 <div class='progress progress-danger progress-small'>
@@ -1767,9 +1768,9 @@
                                             </li>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Donec sodales justo in lacus sagittis</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                      <a href='#'>Donec sodales justo in lacus sagittis</a>
+                                                    </span>
                                                     <small class='pull-right'>58%</small>
                                                 </div>
                                                 <div class='progress progress-success progress-small progress-striped'>
@@ -1778,9 +1779,9 @@
                                             </li>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Etiam condimentum sem nec</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                      <a href='#'>Etiam condimentum sem nec</a>
+                                                    </span>
                                                     <small class='pull-right'>100%</small>
                                                 </div>
                                                 <div class='progress progress-warning progress-small'>
@@ -1789,9 +1790,9 @@
                                             </li>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Etiam condimentum sem nec</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                      <a href='#'>Etiam condimentum sem nec</a>
+                                                    </span>
                                                     <small class='pull-right'>24%</small>
                                                 </div>
                                                 <div class='progress progress-info progress-small'>
@@ -1800,9 +1801,9 @@
                                             </li>
                                             <li>
                                                 <div class='task'>
-                <span class='pull-left'>
-                  <a href='#'>Id mi placerat</a>
-                </span>
+                                                    <span class='pull-left'>
+                                                      <a href='#'>Id mi placerat</a>
+                                                    </span>
                                                     <small class='pull-right'>10%</small>
                                                 </div>
                                                 <div class='progress progress-success progress-small'>
@@ -1850,8 +1851,7 @@
 <!-- / select2 -->
 <script src='../Scripts/plugins/select2/select2.js' type='text/javascript'></script>
 <!-- / color picker -->
-<script src='../Scripts/plugins/bootstrap_colorpicker/bootstrap-colorpicker.min.js'
-        type='text/javascript'></script>
+<script src='../Scripts/plugins/bootstrap_colorpicker/bootstrap-colorpicker.min.js' type='text/javascript'></script>
 <!-- / mention -->
 <script src='../Scripts/plugins/mention/mention.min.js' type='text/javascript'></script>
 <!-- / input mask -->
@@ -1900,17 +1900,14 @@
 <!-- / filetrees -->
 <script src='../Scripts/plugins/dynatree/jquery.dynatree.min.js' type='text/javascript'></script>
 <!-- / datetime picker -->
-<script src='../Scripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js'
-        type='text/javascript'></script>
+<script src='../Scripts/plugins/bootstrap_datetimepicker/bootstrap-datetimepicker.js' type='text/javascript'></script>
 <!-- / daterange picker -->
 <script src='../Scripts/plugins/bootstrap_daterangepicker/moment.min.js' type='text/javascript'></script>
-<script src='../Scripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js'
-        type='text/javascript'></script>
+<script src='../Scripts/plugins/bootstrap_daterangepicker/bootstrap-daterangepicker.js' type='text/javascript'></script>
 <!-- / max length -->
 <script src='../Scripts/plugins/bootstrap_maxlength/bootstrap-maxlength.min.js' type='text/javascript'></script>
 <!-- / dropdown hover -->
-<script src='../Scripts/plugins/bootstrap_hover_dropdown/twitter-bootstrap-hover-dropdown.min.js'
-        type='text/javascript'></script>
+<script src='../Scripts/plugins/bootstrap_hover_dropdown/twitter-bootstrap-hover-dropdown.min.js' type='text/javascript'></script>
 <!-- / slider nav (address book) -->
 <script src='../Scripts/plugins/slider_nav/slidernav-min.js' type='text/javascript'></script>
 <!-- / fuelux -->
@@ -1924,6 +1921,5 @@
 <script src='../Scripts/demo/inplace_editing.js' type='text/javascript'></script>
 <script src='../Scripts/demo/charts.js' type='text/javascript'></script>
 <script src='../Scripts/demo/demo.js' type='text/javascript'></script>
-
 </body>
 </html>
