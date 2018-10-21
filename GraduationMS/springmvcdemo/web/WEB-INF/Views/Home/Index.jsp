@@ -13,8 +13,8 @@
         initVar++;
         System.out.println("jspInit(): JSP被初始化了" + initVar + "次");
     }
-
-    public void jspDestroy() {
+    public void jspDestroy()
+    {
         destroyVar++;
         System.out.println("jspDestroy(): JSP被销毁了" + destroyVar + "次");
     }
