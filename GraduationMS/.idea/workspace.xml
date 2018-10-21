@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/ControllerBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/service/contract/IUserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/service/implementation/UserService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/Layout.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/UserController.java" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/resources/applicationContext.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1002,7 +995,7 @@
       <workItem from="1539910045389" duration="8066000" />
       <workItem from="1539919768948" duration="15368000" />
       <workItem from="1540024492612" duration="12905000" />
-      <workItem from="1540100080215" duration="19512000" />
+      <workItem from="1540100080215" duration="19525000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -1200,7 +1193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540120366914</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="u">
+      <created>1540130731852</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1540130731852</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1236,7 +1236,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149157000" />
+    <option name="totallyTimeSpent" value="149170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1225" height="777" extended-state="0" />
