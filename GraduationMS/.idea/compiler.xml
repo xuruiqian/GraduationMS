@@ -42,37 +42,37 @@
     <bytecodeTargetLevel>
       <module name="activemq" target="1.6" />
       <module name="Activemq" target="1.6" />
-      <module name="activemqdemo" target="1.7" />
+      <module name="activemqdemo" target="1.5" />
       <module name="audittrial" target="1.5" />
-      <module name="Audittrial" target="1.7" />
+      <module name="Audittrial" target="1.5" />
       <module name="com.gt" target="1.5" />
       <module name="com.GT.Demo" target="1.5" />
       <module name="com.gt.demo" target="1.7" />
       <module name="com.gt.Infrastructure" target="1.5" />
-      <module name="Configuration" target="1.7" />
+      <module name="Configuration" target="1.5" />
       <module name="configuration" target="1.5" />
       <module name="dao" target="1.5" />
       <module name="data" target="1.5" />
-      <module name="DataRepository" target="1.7" />
-      <module name="GraduationMS" target="1.7" />
+      <module name="DataRepository" target="1.5" />
+      <module name="GraduationMS" target="1.5" />
       <module name="gt.demo" target="1.7" />
-      <module name="hibernatebasicdemo" target="1.7" />
-      <module name="Infrastructure" target="1.7" />
+      <module name="hibernatebasicdemo" target="1.5" />
+      <module name="Infrastructure" target="1.5" />
       <module name="log" target="1.5" />
-      <module name="Log" target="1.7" />
+      <module name="Log" target="1.5" />
       <module name="logback" target="1.5" />
-      <module name="Logback" target="1.7" />
+      <module name="Logback" target="1.5" />
       <module name="model" target="1.5" />
-      <module name="mybatisbasicdemo" target="1.7" />
-      <module name="Security" target="1.7" />
+      <module name="mybatisbasicdemo" target="1.5" />
+      <module name="Security" target="1.5" />
       <module name="security" target="1.5" />
       <module name="service" target="1.5" />
-      <module name="Services" target="1.7" />
-      <module name="springaopdemo" target="1.7" />
+      <module name="Services" target="1.5" />
+      <module name="springaopdemo" target="1.5" />
       <module name="springbasic" target="1.7" />
-      <module name="springbasicdemo" target="1.7" />
-      <module name="springbeandemo" target="1.7" />
-      <module name="springbootdemo" target="1.7" />
+      <module name="springbasicdemo" target="1.5" />
+      <module name="springbeandemo" target="1.5" />
+      <module name="springbootdemo" target="1.5" />
       <module name="springdemo" target="1.7" />
       <module name="springicodemo" target="1.7" />
       <module name="springmvc" target="1.8" />
@@ -80,10 +80,10 @@
       <module name="springmvcdemo" target="1.8" />
       <module name="srpingmvc" target="1.5" />
       <module name="utilities" target="1.5" />
-      <module name="Utilities" target="1.7" />
+      <module name="Utilities" target="1.5" />
       <module name="ViewModel" target="1.5" />
       <module name="Web" target="1.7" />
-      <module name="WebServices" target="1.7" />
+      <module name="WebServices" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

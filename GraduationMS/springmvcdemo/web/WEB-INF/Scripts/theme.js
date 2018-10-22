@@ -19,7 +19,7 @@
         $('.dd').nestable();
         $('.nav-responsive.nav-pills, .nav-responsive.nav-tabs').tabdrop();
         $("input.nakedpassword").nakedPassword({
-            path: "../Images/plugins/naked_password/"
+            path: "assets/images/plugins/naked_password/"
         });
         setDataTable($(".data-table"));
         setDataTable($(".data-table-column-filter")).columnFilter();

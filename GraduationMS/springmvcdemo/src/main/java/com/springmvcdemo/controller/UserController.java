@@ -23,7 +23,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/user")
-public class UserController extends ControllerBase{
+public class UserController extends ControllerBase {
 
     private static List<User> userList;
 
@@ -52,10 +52,9 @@ public class UserController extends ControllerBase{
     }
 
     @RequestMapping(value = "/login")
-    public String login(
-            @RequestParam("loginname") String loginname,
-            @RequestParam("password") String password,
-            Model model) {
+    public String login(@RequestParam("loginname") String loginname,
+                        @RequestParam("password") String password,
+                        Model model) {
         logger.info("loginname:" + loginname + " password:" + password);
 
         for (User user : userList) {
@@ -80,8 +79,26 @@ public class UserController extends ControllerBase{
                     + ",Password: " + user.getPassword()
                     + ",UserName: " + user.getUsername());
         }
-        Map<String,List<User>> data = new HashMap<String,List<User>>();
-        data.put("userList",userList);
-        return  new ModelAndView("User/Summary",data);
+        Map<String, List<User>> data = new HashMap<String, List<User>>();
+        data.put("userList", userList);
+        return new ModelAndView("User/Summary", data);
+    }
+
+    @RequestMapping(value = "createForm", method = RequestMethod.GET)
+    public String GetUserCreate() {
+        return "/User/Create";
+    }
+
+    @RequestMapping(value = "create", method = RequestMethod.POST)
+    public String PostUserCreate() {
+        return "redirect:/User/Detail";
+    }
+    @RequestMapping(value = "detail", method = RequestMethod.GET)
+    public ModelAndView GetUserDetail() {
+        User user = new User();
+        user.setUsername("User-" + 1);
+        user.setLoginname("LoginName-" + 1);
+        user.setPassword("Password-" + 1);
+        return new ModelAndView("/User/Detail","user",user);
     }
 }
