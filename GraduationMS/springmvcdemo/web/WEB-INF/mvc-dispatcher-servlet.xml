@@ -20,7 +20,8 @@
     <mvc:resources mapping="/Style/**" location="/WEB-INF/Style/"/>
     <mvc:resources mapping="/Fonts/**" location="/WEB-INF/Fonts/"/>
     <!-- configure the InternalResourceViewResolver -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          id="internalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/Views/"/>
         <property name="suffix" value=".jsp"/>
         <property name="order" value="2"/>

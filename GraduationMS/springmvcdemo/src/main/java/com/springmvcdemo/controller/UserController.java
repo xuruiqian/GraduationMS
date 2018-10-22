@@ -1,18 +1,10 @@
 package com.springmvcdemo.controller;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.springmvcdemo.entity.User;
 import com.springmvcdemo.service.contract.IUserService;
 import com.springmvcdemo.service.implementation.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.junit.Before;
-import org.junit.Test;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,8 +13,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @Controller
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/User")
 public class UserController extends ControllerBase {
 
     private static List<User> userList;
@@ -33,12 +30,12 @@ public class UserController extends ControllerBase {
 
     private static final Log logger = LogFactory.getLog(UserController.class);
 
-    @RequestMapping(value = "/registerForm", method = RequestMethod.GET)
+    @RequestMapping(value = "/RegisterForm", method = RequestMethod.GET)
     public String registerForm() {
         return "User/registerForm";
     }
 
-    @RequestMapping(value = "/register", method = RequestMethod.POST)
+    @RequestMapping(value = "/Register", method = RequestMethod.POST)
     public String register(@RequestParam("loginname") String loginname,
                            @RequestParam("password") String password,
                            @RequestParam("username") String username) {
@@ -51,7 +48,7 @@ public class UserController extends ControllerBase {
         return "loginForm";
     }
 
-    @RequestMapping(value = "/login")
+    @RequestMapping(value = "/Login")
     public String login(@RequestParam("loginname") String loginname,
                         @RequestParam("password") String password,
                         Model model) {
@@ -67,7 +64,7 @@ public class UserController extends ControllerBase {
         return "loginForm";
     }
 
-    @RequestMapping(value = "summary", method = RequestMethod.GET)
+    @RequestMapping(value = "/Summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         IUserService us = (UserService) applicationContext.getBean("userService");
@@ -84,16 +81,16 @@ public class UserController extends ControllerBase {
         return new ModelAndView("User/Summary", data);
     }
 
-    @RequestMapping(value = "createForm", method = RequestMethod.GET)
+    @RequestMapping(value = "/CreateForm", method = RequestMethod.GET)
     public String GetUserCreate() {
         return "/User/Create";
     }
 
-    @RequestMapping(value = "create", method = RequestMethod.POST)
+    @RequestMapping(value = "/Create", method = RequestMethod.POST)
     public String PostUserCreate() {
         return "redirect:/User/Detail";
     }
-    @RequestMapping(value = "detail", method = RequestMethod.GET)
+    @RequestMapping(value = "/Detail", method = RequestMethod.GET)
     public ModelAndView GetUserDetail() {
         User user = new User();
         user.setUsername("User-" + 1);
