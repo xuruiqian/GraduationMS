@@ -24,8 +24,8 @@
                                 html +=
                                     '   <tr> ' +
                                     '       <td>' + comment['username'] + '</td>' +
-                                    '       <td>' + comment['username'] + '</td>' +
-                                    '       <td>' + comment['username'] + '</td>' +
+                                    '       <td>' + comment['loginname'] + '</td>' +
+                                    '       <td>' + comment['password'] + '</td>' +
                                     '   </tr>';
                             });
                             html +=
