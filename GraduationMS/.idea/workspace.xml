@@ -6,8 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="u">
+    <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp" />
+      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Create.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Create.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="1411">
+              <caret line="232" column="25" lean-forward="true" selection-start-line="232" selection-start-column="25" selection-end-line="232" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -107,10 +109,10 @@
       <file leaf-file-name="Detail.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
               <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
+                <element signature="e#420#3029#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -126,12 +128,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Summary.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Summary.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="70" selection-end-column="25" />
               <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
                 <marker date="1540219229404" expanded="true" signature="437:3451" ph="..." />
               </folding>
             </state>
@@ -283,10 +286,10 @@
         <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Style/light-theme.css" />
         <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Layout.jsp" />
         <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Home/Index.jsp" />
-        <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp" />
-        <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp" />
         <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/tiles-defs.xml" />
         <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp" />
+        <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp" />
+        <option value="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp" />
       </list>
     </option>
   </component>
@@ -421,36 +424,6 @@
               <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
               <item name="springmvcdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvcdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvcdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvcdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GraduationMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GraduationMS" type="462c0819:PsiDirectoryNode" />
-              <item name="springmvcdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -900,7 +873,7 @@
       <workItem from="1539919768948" duration="15368000" />
       <workItem from="1540024492612" duration="12905000" />
       <workItem from="1540100080215" duration="36608000" />
-      <workItem from="1540208948925" duration="6654000" />
+      <workItem from="1540208948925" duration="6897000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -1119,7 +1092,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540219307871</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="u">
+      <created>1540219340448</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1540219340448</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1155,7 +1135,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172907000" />
+    <option name="totallyTimeSpent" value="173150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="6" />
@@ -1633,24 +1613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="66" column="9" lean-forward="false" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/tiles-defs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1662,10 +1624,29 @@
     <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="70" selection-end-column="25" />
           <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
             <marker date="1540219229404" expanded="true" signature="437:3451" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
+          <folding>
+            <element signature="e#420#3029#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="232" column="25" lean-forward="true" selection-start-line="232" selection-start-column="25" selection-end-line="232" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
