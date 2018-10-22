@@ -19,6 +19,7 @@
     <mvc:resources mapping="/Images/**" location="/WEB-INF/Images/"/>
     <mvc:resources mapping="/Style/**" location="/WEB-INF/Style/"/>
     <mvc:resources mapping="/Fonts/**" location="/WEB-INF/Fonts/"/>
+    <mvc:resources mapping="/Help/**" location="/WEB-INF/Help/"/>
     <!-- configure the InternalResourceViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="internalResourceViewResolver">

@@ -8,11 +8,15 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.HandlerExceptionResolver;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-public class ControllerBase {
+public class ControllerBase implements HandlerExceptionResolver {
 
     public ApplicationContext applicationContext;
 
@@ -33,5 +37,14 @@ public class ControllerBase {
                     + ",Password: " + user.getPassword()
                     + ",UserName: " + user.getUsername());
         }
+    }
+
+    @Override
+    public ModelAndView resolveException(HttpServletRequest httpServletRequest,
+                                         HttpServletResponse httpServletResponse,
+                                         Object o,
+                                         Exception e) {
+        System.out.println("This is exception handler method!");
+        return new ModelAndView("redirect:/Help/Error.html");
     }
 }
