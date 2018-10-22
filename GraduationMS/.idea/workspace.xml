@@ -6,92 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Springmvc_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Springmvc_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spullara_mustache_java_compiler_0_8_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_12_0_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jboss_javassist_3_7_ga.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_2_7_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_api_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_autotag_core_runtime_1_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_compat_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_core_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_el_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_extras_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_freemarker_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_jsp_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_mvel_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_ognl_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_api_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_freemarker_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_jsp_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_mustache_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_servlet_wildcard_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_request_velocity_1_0_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_servlet_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_template_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tiles_tiles_velocity_3_0_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_6_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_15.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mvel_mvel2_2_0_11.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/logs/ssm.log" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Home/Demo.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Body.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Footer.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Header.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Layout.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Meta.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Navigation.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Scripts.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/_Styles.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Create.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Detail.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/tiles-defs.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/springmvcdemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvcdemo_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+    <list default="true" id="a20cc336-55a7-436b-9e76-f2734f4b52ec" name="Default" comment="u">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DataRepository/DataRepository.iml" afterPath="$PROJECT_DIR$/DataRepository/DataRepository.iml" />
-      <change beforePath="$PROJECT_DIR$/DataRepository/target/classes/com/gt/demo/DataRepository/Entities/Client.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataRepository/target/classes/com/gt/demo/DataRepository/Entities/News.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/DataRepository/target/classes/com/gt/demo/DataRepository/Entities/User.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/GraduationMS.iml" afterPath="$PROJECT_DIR$/GraduationMS.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" afterPath="$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" afterPath="$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.iml" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Log/Log.iml" afterPath="$PROJECT_DIR$/Infrastructure/Log/Log.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" afterPath="$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Security/Security.iml" afterPath="$PROJECT_DIR$/Infrastructure/Security/Security.iml" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" afterPath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
-      <change beforePath="$PROJECT_DIR$/Services/Services.iml" afterPath="$PROJECT_DIR$/Services/Services.iml" />
-      <change beforePath="$PROJECT_DIR$/WebServices/WebServices.iml" afterPath="$PROJECT_DIR$/WebServices/WebServices.iml" />
-      <change beforePath="$PROJECT_DIR$/activemqdemo/activemqdemo.iml" afterPath="$PROJECT_DIR$/activemqdemo/activemqdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" afterPath="$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" afterPath="$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/springaopdemo/springaopdemo.iml" afterPath="$PROJECT_DIR$/springaopdemo/springaopdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springbasicdemo/springbasicdemo.iml" afterPath="$PROJECT_DIR$/springbasicdemo/springbasicdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springbeandemo/springbeandemo.iml" afterPath="$PROJECT_DIR$/springbeandemo/springbeandemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" afterPath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/pom.xml" afterPath="$PROJECT_DIR$/springmvcdemo/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" afterPath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/UserController.java" afterPath="$PROJECT_DIR$/springmvcdemo/src/main/java/com/springmvcdemo/controller/UserController.java" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/html5shiv.js" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/html5shiv.js" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/plugins/retina/retina.js" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/plugins/retina/retina.js" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/theme.js" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Scripts/theme.js" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Style/light-theme.css" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Style/light-theme.css" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Home/Index.jsp" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Home/Index.jsp" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/Shared/Layout.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/Views/User/Summary.jsp" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/mvc-dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/mvc-dispatcher-servlet.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/springmvcdemo/web/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/springmvcdemo/web/index.html" afterPath="$PROJECT_DIR$/springmvcdemo/web/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -984,7 +900,7 @@
       <workItem from="1539919768948" duration="15368000" />
       <workItem from="1540024492612" duration="12905000" />
       <workItem from="1540100080215" duration="36608000" />
-      <workItem from="1540208948925" duration="6589000" />
+      <workItem from="1540208948925" duration="6654000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1539526383236</created>
@@ -1196,7 +1112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540130739755</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="u">
+      <created>1540219307871</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1540219307871</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1232,7 +1155,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172842000" />
+    <option name="totallyTimeSpent" value="172907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="6" />
@@ -1481,6 +1404,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="3" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="22" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1548,6 +1474,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
