@@ -1,8 +1,8 @@
 package com.springmvcdemo.controller;
 
 import com.springmvcdemo.entity.User;
-import com.springmvcdemo.service.contract.IUserService;
-import com.springmvcdemo.service.implementation.UserService;
+import com.springmvcdemo.service.contract.IService;
+import com.springmvcdemo.service.implementation.Service;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -67,7 +67,7 @@ public class UserController extends ControllerBase {
     @RequestMapping(value = "summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (UserService) applicationContext.getBean("userService");
+        IService us = (Service) applicationContext.getBean("userService");
         List<User> userList = us.GetUserList();
         System.out.println("applicationContext: " + us);
         for (User user : userList) {

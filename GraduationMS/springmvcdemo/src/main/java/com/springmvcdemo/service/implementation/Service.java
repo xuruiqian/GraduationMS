@@ -1,12 +1,12 @@
 package com.springmvcdemo.service.implementation;
 
 import com.springmvcdemo.entity.User;
-import com.springmvcdemo.service.contract.IUserService;
+import com.springmvcdemo.service.contract.IService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserService implements IUserService {
+public class Service implements IService {
     @Override
     public List<User> GetUserList() {
         List<User> userList = new ArrayList<>();

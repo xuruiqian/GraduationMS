@@ -3,8 +3,8 @@ package com.springmvcdemo.controller.api;
 import com.alibaba.fastjson.JSON;
 import com.springmvcdemo.controller.ControllerBase;
 import com.springmvcdemo.entity.User;
-import com.springmvcdemo.service.contract.IUserService;
-import com.springmvcdemo.service.implementation.UserService;
+import com.springmvcdemo.service.contract.IService;
+import com.springmvcdemo.service.implementation.Service;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +20,7 @@ public class UserApiController extends ControllerBase {
     @RequestMapping(value = "/Summary", method = RequestMethod.GET)
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IUserService us = (UserService) applicationContext.getBean("userService");
+        IService us = (IService) applicationContext.getBean("service");
         List<User> userList = us.GetUserList();
         System.out.println("applicationContext: " + us);
         for (User user : userList) {

@@ -4,6 +4,6 @@ import com.springmvcdemo.entity.User;
 
 import java.util.List;
 
-public interface IUserService {
+public interface IService {
     List<User> GetUserList();
 }
