@@ -1,3 +1,5 @@
+<%@ page import="com.springmvcdemo.entity.User" %>
+<%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%--
   Created by IntelliJ IDEA.
   User: ruiqian.xu
@@ -5,6 +7,9 @@
   Time: 8:40 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%
+    User currentUser = (User) request.getSession().getAttribute("currentUser");
+%>
 <div class='navbar'>
     <div class='navbar-inner'>
         <div class='container-fluid'>
@@ -168,7 +173,7 @@
                 <li class='dropdown dark user-menu'>
                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
                         <img alt='Mila Kunis' height='23' src='../Images/avatar.jpg' width='23'/>
-                        <span class='user-name hidden-phone'>Mila Kunis</span>
+                        <span class='user-name hidden-phone'>${currentUser.getUsername()}</span>
                         <b class='caret'></b>
                     </a>
                     <ul class='dropdown-menu'>

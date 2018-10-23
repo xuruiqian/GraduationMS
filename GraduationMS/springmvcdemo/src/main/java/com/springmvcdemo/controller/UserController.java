@@ -1,6 +1,8 @@
 package com.springmvcdemo.controller;
 
+import com.springmvcdemo.Authority.Authority;
 import com.springmvcdemo.entity.User;
+import com.springmvcdemo.option.AuthorityType;
 import com.springmvcdemo.service.contract.IService;
 import com.springmvcdemo.service.implementation.Service;
 import org.apache.commons.logging.Log;
@@ -30,44 +32,12 @@ public class UserController extends ControllerBase {
 
     private static final Log logger = LogFactory.getLog(UserController.class);
 
-    @RequestMapping(value = "/RegisterForm", method = RequestMethod.GET)
-    public String registerForm() {
-        return "User/registerForm";
-    }
 
-    @RequestMapping(value = "/Register", method = RequestMethod.POST)
-    public String register(@RequestParam("loginname") String loginname,
-                           @RequestParam("password") String password,
-                           @RequestParam("username") String username) {
-        User user = new User();
-        user.setLoginname(loginname);
-        user.setPassword(password);
-        user.setUsername(username);
-        userList.add(user);
-
-        return "loginForm";
-    }
-
-    @RequestMapping(value = "/Login")
-    public String login(@RequestParam("loginname") String loginname,
-                        @RequestParam("password") String password,
-                        Model model) {
-        logger.info("loginname:" + loginname + " password:" + password);
-
-        for (User user : userList) {
-            if (user.getLoginname().equals(loginname) &&
-                    user.getPassword().equals(password)) {
-                model.addAttribute("user", user);
-                return "welcome";
-            }
-        }
-        return "loginForm";
-    }
-
+    @Authority(AuthorityType.Validate)
     @RequestMapping(value = "summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IService us = (Service) applicationContext.getBean("userService");
+        IService us = (IService) applicationContext.getBean("service");
         List<User> userList = us.GetUserList();
         System.out.println("applicationContext: " + us);
         for (User user : userList) {
@@ -81,25 +51,27 @@ public class UserController extends ControllerBase {
         return new ModelAndView("User/Summary", data);
     }
 
+
+    @Authority(AuthorityType.Validate)
     @RequestMapping(value = "/CreateForm", method = RequestMethod.GET)
     public String GetUserCreate() {
         return "/User/Create";
     }
 
+
+    @Authority(AuthorityType.Validate)
     @RequestMapping(value = "/Create", method = RequestMethod.POST)
     public String PostUserCreate() {
         return "redirect:/User/Detail";
     }
+
+    @Authority(AuthorityType.Validate)
     @RequestMapping(value = "detail", method = RequestMethod.GET)
     public ModelAndView GetUserDetail() {
         User user = new User();
         user.setUsername("User-" + 1);
         user.setLoginname("LoginName-" + 1);
         user.setPassword("Password-" + 1);
-
-        int i=0;
-        int j=1;
-        int x=j/i;
 
         return new ModelAndView("/User/Detail","user",user);
     }

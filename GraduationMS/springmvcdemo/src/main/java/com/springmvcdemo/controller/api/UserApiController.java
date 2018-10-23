@@ -1,8 +1,10 @@
 package com.springmvcdemo.controller.api;
 
 import com.alibaba.fastjson.JSON;
+import com.springmvcdemo.Authority.Authority;
 import com.springmvcdemo.controller.ControllerBase;
 import com.springmvcdemo.entity.User;
+import com.springmvcdemo.option.AuthorityType;
 import com.springmvcdemo.service.contract.IService;
 import com.springmvcdemo.service.implementation.Service;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,7 +18,9 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "/Api/User")
 public class UserApiController extends ControllerBase {
+
     @ResponseBody
+    @Authority(AuthorityType.Validate)
     @RequestMapping(value = "/Summary", method = RequestMethod.GET)
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
