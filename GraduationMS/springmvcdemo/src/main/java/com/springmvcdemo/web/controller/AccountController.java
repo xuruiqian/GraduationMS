@@ -1,6 +1,6 @@
-package com.springmvcdemo.controller;
+package com.springmvcdemo.web.controller;
 
-import com.springmvcdemo.entity.User;
+import com.springmvcdemo.domain.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,7 +28,9 @@ public class AccountController extends ControllerBase {
         user.setLoginname(loginname);
         user.setPassword(password);
 
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder
+                .getRequestAttributes())
+                .getRequest();
         ServletWebRequest servletWebRequest = new ServletWebRequest(request);
         HttpServletResponse response = servletWebRequest.getResponse();
 

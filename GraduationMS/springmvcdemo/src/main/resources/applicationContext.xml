@@ -14,21 +14,24 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
-    <bean name="service" class="com.springmvcdemo.service.implementation.Service" scope="singleton"></bean>
-    <bean name="AuthorityAnnotationInterceptor" class="com.springmvcdemo.Authority.AuthorityAnnotationInterceptor"></bean>
-    <!-- 这个切面也要配置成bean-->
+    <!--Services Config-->
+    <bean name="UserService" class="com.springmvcdemo.service.implementation.UserService" scope="singleton"></bean>
+
+    <!--Authority Config-->
+    <bean class="com.springmvcdemo.web.authority.AuthorityAnnotationInterceptor"></bean>
+
+    <!--Aop Config-->
     <bean id="beforeLog" class="com.springmvcdemo.advise.BeforeLog"/>
     <bean id="afterLog" class="com.springmvcdemo.advise.AfterLog"></bean>
     <bean id="beforeAuthorization" class="com.springmvcdemo.advise.BeforeAuthorization"></bean>
-
     <aop:config>
-        <aop:pointcut expression="execution(* com.springmvcdemo.service.implementation.*.*(..))" id="pointcut"/>
-        <aop:advisor advice-ref="beforeLog" pointcut-ref="pointcut"/>
-        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
+        <aop:pointcut expression="execution(* com.springmvcdemo.service.implementation.*.*(..))" id="servicepointcut"/>
+        <aop:advisor advice-ref="beforeLog" pointcut-ref="servicepointcut"/>
+        <aop:advisor advice-ref="afterLog" pointcut-ref="servicepointcut"/>
     </aop:config>
     <aop:config>
-        <aop:pointcut expression="execution(* com.springmvcdemo.controller.*.*(..))" id="pointcutcontroller"/>
-        <aop:advisor advice-ref="beforeAuthorization" pointcut-ref="pointcutcontroller"/>
-        <aop:advisor advice-ref="afterLog" pointcut-ref="pointcutcontroller"/>
+        <aop:pointcut expression="execution(* com.springmvcdemo.web.controller.*.*(..))" id="controllerpointcut"/>
+        <aop:advisor advice-ref="beforeLog" pointcut-ref="controllerpointcut"/>
+        <aop:advisor advice-ref="afterLog" pointcut-ref="controllerpointcut"/>
     </aop:config>
 </beans>

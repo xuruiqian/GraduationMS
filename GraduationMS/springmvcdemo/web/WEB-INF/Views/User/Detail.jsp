@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.springmvcdemo.entity.User" %>
+<%@ page import="com.springmvcdemo.domain.entity.User" %>
 <%
     User user = (User) request.getAttribute("user");
 %>

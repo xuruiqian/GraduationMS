@@ -10,16 +10,19 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
     <!-- scan the package and the sub package -->
-    <context:component-scan base-package="com.springmvcdemo.controller"/>
+    <context:component-scan base-package="com.springmvcdemo.web.controller"/>
     <!-- don't handle the static resource -->
     <mvc:default-servlet-handler/>
     <!-- if you use annotation you must configure following setting -->
     <mvc:annotation-driven/>
+
+    <!--Static resources config: Allow static resources can be request directly.-->
     <mvc:resources mapping="/Scripts/**" location="/WEB-INF/Scripts/"/>
     <mvc:resources mapping="/Images/**" location="/WEB-INF/Images/"/>
     <mvc:resources mapping="/Style/**" location="/WEB-INF/Style/"/>
     <mvc:resources mapping="/Fonts/**" location="/WEB-INF/Fonts/"/>
     <mvc:resources mapping="/Help/**" location="/WEB-INF/Help/"/>
+
     <!-- configure the InternalResourceViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="internalResourceViewResolver">

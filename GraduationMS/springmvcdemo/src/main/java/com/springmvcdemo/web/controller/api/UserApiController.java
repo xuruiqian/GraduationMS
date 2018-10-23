@@ -1,12 +1,11 @@
-package com.springmvcdemo.controller.api;
+package com.springmvcdemo.web.controller.api;
 
 import com.alibaba.fastjson.JSON;
-import com.springmvcdemo.Authority.Authority;
-import com.springmvcdemo.controller.ControllerBase;
-import com.springmvcdemo.entity.User;
-import com.springmvcdemo.option.AuthorityType;
-import com.springmvcdemo.service.contract.IService;
-import com.springmvcdemo.service.implementation.Service;
+import com.springmvcdemo.web.authority.Authority;
+import com.springmvcdemo.web.controller.ControllerBase;
+import com.springmvcdemo.domain.entity.User;
+import com.springmvcdemo.domain.option.AuthorityType;
+import com.springmvcdemo.service.contract.IUserService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,15 +23,11 @@ public class UserApiController extends ControllerBase {
     @RequestMapping(value = "/Summary", method = RequestMethod.GET)
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IService us = (IService) applicationContext.getBean("service");
+        IUserService us = (IUserService) applicationContext.getBean("UserService");
         List<User> userList = us.GetUserList();
-        System.out.println("applicationContext: " + us);
-        for (User user : userList) {
-            System.out.println(user);
-            System.out.println("LoginName: " + user.getLoginname()
-                    + ",Password: " + user.getPassword()
-                    + ",UserName: " + user.getUsername());
-        }
-        return JSON.toJSONString(userList);
+        String jsonStr = JSON.toJSONString(userList);
+        System.out.println("User List JsonStr: " + jsonStr);
+
+        return jsonStr;
     }
 }

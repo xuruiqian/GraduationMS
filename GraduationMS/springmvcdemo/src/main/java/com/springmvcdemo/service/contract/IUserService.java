@@ -1,9 +1,9 @@
 package com.springmvcdemo.service.contract;
 
-import com.springmvcdemo.entity.User;
+import com.springmvcdemo.domain.entity.User;
 
 import java.util.List;
 
-public interface IService {
+public interface IUserService {
     List<User> GetUserList();
 }

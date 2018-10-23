@@ -1,18 +1,15 @@
-package com.springmvcdemo.controller;
+package com.springmvcdemo.web.controller;
 
-import com.springmvcdemo.Authority.Authority;
-import com.springmvcdemo.entity.User;
-import com.springmvcdemo.option.AuthorityType;
-import com.springmvcdemo.service.contract.IService;
-import com.springmvcdemo.service.implementation.Service;
+import com.springmvcdemo.web.authority.Authority;
+import com.springmvcdemo.domain.entity.User;
+import com.springmvcdemo.domain.option.AuthorityType;
+import com.springmvcdemo.service.contract.IUserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -23,31 +20,22 @@ import java.util.Map;
 @Controller
 @RequestMapping(value = "user")
 public class UserController extends ControllerBase {
-
+    private static final Log logger = LogFactory.getLog(UserController.class);
     private static List<User> userList;
 
     public UserController() {
         userList = new ArrayList<User>();
     }
 
-    private static final Log logger = LogFactory.getLog(UserController.class);
-
-
     @Authority(AuthorityType.Validate)
     @RequestMapping(value = "summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
-        IService us = (IService) applicationContext.getBean("service");
+        IUserService us = (IUserService) applicationContext.getBean("UserService");
         List<User> userList = us.GetUserList();
-        System.out.println("applicationContext: " + us);
-        for (User user : userList) {
-            System.out.println(user);
-            System.out.println("LoginName: " + user.getLoginname()
-                    + ",Password: " + user.getPassword()
-                    + ",UserName: " + user.getUsername());
-        }
         Map<String, List<User>> data = new HashMap<String, List<User>>();
         data.put("userList", userList);
+
         return new ModelAndView("User/Summary", data);
     }
 
@@ -73,6 +61,6 @@ public class UserController extends ControllerBase {
         user.setLoginname("LoginName-" + 1);
         user.setPassword("Password-" + 1);
 
-        return new ModelAndView("/User/Detail","user",user);
+        return new ModelAndView("/User/Detail", "user", user);
     }
 }

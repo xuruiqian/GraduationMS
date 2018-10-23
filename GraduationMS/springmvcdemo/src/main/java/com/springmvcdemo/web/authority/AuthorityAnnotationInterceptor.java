@@ -1,26 +1,18 @@
-package com.springmvcdemo.Authority;
+package com.springmvcdemo.web.authority;
 
-import com.alibaba.fastjson.JSON;
-import com.springmvcdemo.entity.User;
-import com.springmvcdemo.option.AuthorityType;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-import org.springframework.web.context.request.ServletWebRequest;
+import com.springmvcdemo.domain.entity.User;
+import com.springmvcdemo.domain.option.AuthorityType;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 
-/**
- * 权限认证拦截器
- */
 public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        System.out.println("authority checking...");
         if (handler instanceof HandlerMethod) {
             HandlerMethod hm = (HandlerMethod) handler;
             Class<?> clazz = hm.getBeanType();
@@ -55,20 +47,10 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
                                     return true;
                         }
                     }
-                    //1. 跳转
+                    System.out.println("authority check no pass!");
                     String url = "../../Account/Login";
                     response.getWriter().write("<script>top.location.href='" + url + "'</script>");
 
-                    //2. 未通过验证，返回提示json
-//                    Map<String, Object> responseMap = new HashMap<String, Object>();
-//                    responseMap.put("code", code);
-//                    responseMap.put("msg", msg);
-//                    responseMap.put("params", "");
-//                    responseMap.put("rows", "");
-//                    String json = JSON.toJSONString(responseMap);
-//
-//                    response.setContentType("application/json; charset=utf-8");
-//                    response.getWriter().write(json);
                     return false;
                 }
             } catch (Exception e) {

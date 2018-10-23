@@ -1,10 +1,6 @@
-package com.springmvcdemo.controller;
+package com.springmvcdemo.web.controller;
 
-import com.springmvcdemo.entity.User;
-import com.springmvcdemo.service.contract.IService;
-import com.springmvcdemo.service.implementation.Service;
 import org.junit.Before;
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
@@ -15,7 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 
 @Controller
 public class ControllerBase implements HandlerExceptionResolver {
@@ -28,23 +23,8 @@ public class ControllerBase implements HandlerExceptionResolver {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
     }
 
-    @Test
-    public void ServiceFromSpringframworkTest() {
-        IService us = (Service) applicationContext.getBean("service");
-        List<User> userList = us.GetUserList();
-        System.out.println("applicationContext: " + us);
-        for (User user : userList) {
-            System.out.println(user);
-            System.out.println("LoginName: " + user.getLoginname()
-                    + ",Password: " + user.getPassword()
-                    + ",UserName: " + user.getUsername());
-        }
-    }
-
     /**
-     *
      * Global exception handler
-     *
      */
     @Override
     public ModelAndView resolveException(HttpServletRequest httpServletRequest,

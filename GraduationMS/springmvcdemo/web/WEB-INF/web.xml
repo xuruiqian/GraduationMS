@@ -13,24 +13,6 @@
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
 
-     <!--配置 org.springframework.web.filter.HiddenHttpMethodFilter:可以把 POST请求转为 DELETE或 POST 请求 -->
-    <!--<filter>-->
-        <!--<filter-name>HiddenHttpMethodFilter</filter-name>-->
-        <!--<filter-class>org.springframework.web.filter.HiddenHttpMethodFilter</filter-class>-->
-    <!--</filter>-->
-    <!--<filter-mapping>-->
-        <!--<filter-name>HiddenHttpMethodFilter</filter-name>-->
-        <!--<url-pattern>/*</url-pattern>-->
-    <!--</filter-mapping>-->
-    <!--<servlet>-->
-        <!--<servlet-name>mvc-dispatcher</servlet-name>-->
-        <!--<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
-        <!--<load-on-startup>1</load-on-startup>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>mvc-dispatcher</servlet-name>-->
-        <!--<url-pattern>/</url-pattern>-->
-    <!--</servlet-mapping>-->
     <servlet>
         <!-- 声明Dispatcher，告诉Web容器我们将使用springMVC的DispatcherServlet -->
         <servlet-name>mvc-dispatcher-servlet</servlet-name>

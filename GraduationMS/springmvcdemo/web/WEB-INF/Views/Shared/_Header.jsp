@@ -1,4 +1,4 @@
-<%@ page import="com.springmvcdemo.entity.User" %>
+<%@ page import="com.springmvcdemo.domain.entity.User" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%--
   Created by IntelliJ IDEA.

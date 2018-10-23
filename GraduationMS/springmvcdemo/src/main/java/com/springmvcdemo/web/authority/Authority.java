@@ -1,6 +1,6 @@
-package com.springmvcdemo.Authority;
+package com.springmvcdemo.web.authority;
 
-import com.springmvcdemo.option.AuthorityType;
+import com.springmvcdemo.domain.option.AuthorityType;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;
@@ -11,6 +11,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Documented
 public @interface Authority {
-    // 默认验证
     AuthorityType value() default AuthorityType.Validate;
 }
