@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvcdemo.DataRepository.Mapper.Interface.LogMapper" >
+  <resultMap id="BaseResultMap" type="com.springmvcdemo.DataRepository.Domain.Log" >
+    <id column="ID" property="id" jdbcType="CHAR" />
+    <result column="LogLevel" property="loglevel" jdbcType="INTEGER" />
+    <result column="IsDeleted" property="isdeleted" jdbcType="BIT" />
+    <result column="Remark" property="remark" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.springmvcdemo.DataRepository.Domain.LogWithBLOBs" extends="BaseResultMap" >
+    <result column="LogNo" property="logno" jdbcType="LONGVARCHAR" />
+    <result column="LogContext" property="logcontext" jdbcType="LONGVARCHAR" />
+    <result column="ActionUser" property="actionuser" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, LogLevel, IsDeleted, Remark, CreateTime, UpdateTime
+  </sql>
+  <sql id="Blob_Column_List" >
+    LogNo, LogContext, ActionUser
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_log
+    where ID = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_log
+    where ID = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.springmvcdemo.DataRepository.Domain.LogWithBLOBs" >
+    insert into tb_log (ID, LogLevel, IsDeleted, 
+      Remark, CreateTime, UpdateTime, 
+      LogNo, LogContext, ActionUser
+      )
+    values (#{id,jdbcType=CHAR}, #{loglevel,jdbcType=INTEGER}, #{isdeleted,jdbcType=BIT}, 
+      #{remark,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP}, 
+      #{logno,jdbcType=LONGVARCHAR}, #{logcontext,jdbcType=LONGVARCHAR}, #{actionuser,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.springmvcdemo.DataRepository.Domain.LogWithBLOBs" >
+    insert into tb_log
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="loglevel != null" >
+        LogLevel,
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted,
+      </if>
+      <if test="remark != null" >
+        Remark,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime,
+      </if>
+      <if test="logno != null" >
+        LogNo,
+      </if>
+      <if test="logcontext != null" >
+        LogContext,
+      </if>
+      <if test="actionuser != null" >
+        ActionUser,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="loglevel != null" >
+        #{loglevel,jdbcType=INTEGER},
+      </if>
+      <if test="isdeleted != null" >
+        #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="logno != null" >
+        #{logno,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="logcontext != null" >
+        #{logcontext,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="actionuser != null" >
+        #{actionuser,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.springmvcdemo.DataRepository.Domain.LogWithBLOBs" >
+    update tb_log
+    <set >
+      <if test="loglevel != null" >
+        LogLevel = #{loglevel,jdbcType=INTEGER},
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted = #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        Remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="logno != null" >
+        LogNo = #{logno,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="logcontext != null" >
+        LogContext = #{logcontext,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="actionuser != null" >
+        ActionUser = #{actionuser,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.springmvcdemo.DataRepository.Domain.LogWithBLOBs" >
+    update tb_log
+    set LogLevel = #{loglevel,jdbcType=INTEGER},
+      IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      LogNo = #{logno,jdbcType=LONGVARCHAR},
+      LogContext = #{logcontext,jdbcType=LONGVARCHAR},
+      ActionUser = #{actionuser,jdbcType=LONGVARCHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.springmvcdemo.DataRepository.Domain.Log" >
+    update tb_log
+    set LogLevel = #{loglevel,jdbcType=INTEGER},
+      IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

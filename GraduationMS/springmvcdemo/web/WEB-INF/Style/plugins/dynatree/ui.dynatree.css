@@ -42,7 +42,7 @@ ul.dynatree-container li.dynatree-lastsib
 {
 	background-image: none;
 }
-/* Suppress lines if level is fixed expanded (option minExpandLevel) */
+/* Suppress lines if level is fixed expanded (Option minExpandLevel) */
 ul.dynatree-no-connector > li
 {
 	background-image: none;
@@ -82,7 +82,7 @@ span.dynatree-drag-helper-img,
 	background-position: 0 0;
 }
 
-/** Used by 'icon' node option: */
+/** Used by 'icon' node Option: */
 ul.dynatree-container img
 {
 	width: 16px;

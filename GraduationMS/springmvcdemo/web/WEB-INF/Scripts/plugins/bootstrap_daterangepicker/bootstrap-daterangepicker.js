@@ -176,7 +176,7 @@
 
                     // If the end of the range is before the minimum (if min is set) OR
                     // the start of the range is after the max (also if set) don't display this
-                    // range option.
+                    // range Option.
                     if ((this.minDate && end.isBefore(this.minDate)) || (this.maxDate && start.isAfter(this.maxDate))) {
                         continue;
                     }
@@ -646,9 +646,9 @@
 
             for (var m = 0; m < 12; m++) {
                 if ((!inMinYear || m >= minDate.month()) && (!inMaxYear || m <= maxDate.month())) {
-                    monthHtml += "<option value='" + m + "'" +
+                    monthHtml += "<Option value='" + m + "'" +
                         (m === currentMonth ? " selected='selected'" : "") +
-                        ">" + this.locale.monthNames[m] + "</option>";
+                        ">" + this.locale.monthNames[m] + "</Option>";
                 }
             }
             monthHtml += "</select>";
@@ -659,9 +659,9 @@
             var yearHtml = '<select class="yearselect">';
 
             for (var y = minYear; y <= maxYear; y++) {
-                yearHtml += '<option value="' + y + '"' +
+                yearHtml += '<Option value="' + y + '"' +
                     (y === currentYear ? ' selected="selected"' : '') +
-                    '>' + y + '</option>';
+                    '>' + y + '</Option>';
             }
 
             yearHtml += '</select>';

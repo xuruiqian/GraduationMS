@@ -15,17 +15,17 @@
         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
 
     <!--Services Config-->
-    <bean name="UserService" class="com.springmvcdemo.service.implementation.UserService" scope="singleton"></bean>
+    <bean name="UserService" class="com.springmvcdemo.Service.Implementation.UserService" scope="singleton"></bean>
 
     <!--Authority Config-->
     <bean class="com.springmvcdemo.web.authority.AuthorityAnnotationInterceptor"></bean>
 
     <!--Aop Config-->
-    <bean id="beforeLog" class="com.springmvcdemo.advise.BeforeLog"/>
-    <bean id="afterLog" class="com.springmvcdemo.advise.AfterLog"></bean>
-    <bean id="beforeAuthorization" class="com.springmvcdemo.advise.BeforeAuthorization"></bean>
+    <bean id="beforeLog" class="com.springmvcdemo.Advise.BeforeLog"/>
+    <bean id="afterLog" class="com.springmvcdemo.Advise.AfterLog"></bean>
+    <bean id="beforeAuthorization" class="com.springmvcdemo.Advise.BeforeAuthorization"></bean>
     <aop:config>
-        <aop:pointcut expression="execution(* com.springmvcdemo.service.implementation.*.*(..))" id="servicepointcut"/>
+        <aop:pointcut expression="execution(* com.springmvcdemo.Service.Implementation.*.*(..))" id="servicepointcut"/>
         <aop:advisor advice-ref="beforeLog" pointcut-ref="servicepointcut"/>
         <aop:advisor advice-ref="afterLog" pointcut-ref="servicepointcut"/>
     </aop:config>

@@ -75,7 +75,7 @@
       <module name="springmvc" target="1.8" />
       <module name="Springmvc" target="1.8" />
       <module name="springmvcbasicdemo" target="1.8" />
-      <module name="springmvcdemo" target="1.8" />
+      <module name="springmvcdemo" target="1.6" />
       <module name="srpingmvc" target="1.5" />
       <module name="utilities" target="1.5" />
       <module name="Utilities" target="1.5" />

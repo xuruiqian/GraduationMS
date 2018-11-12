@@ -1,6 +1,6 @@
 package com.springmvcdemo.web.authority;
 
-import com.springmvcdemo.domain.option.AuthorityType;
+import com.springmvcdemo.DataRepository.Option.AuthorityType;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

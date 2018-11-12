@@ -198,7 +198,7 @@
     }
 
     /**
-     * A simple implementation of a thunk
+     * A simple Implementation of a thunk
      * @param formula function used to lazily initialize the thunk
      * @return {Function}
      */
@@ -819,7 +819,7 @@
 
                     children=element.children();
 
-                    // ignore the placeholder option if there is one
+                    // ignore the placeholder Option if there is one
                     if (this.getPlaceholder() !== undefined && children.length > 0) {
                         firstChild = children[0];
                         if ($(firstChild).text() === "") {
@@ -1476,7 +1476,7 @@
 
         // abstract
         blur: function () {
-            // if selectOnBlur == true, select the currently highlighted option
+            // if selectOnBlur == true, select the currently highlighted Option
             if (this.opts.selectOnBlur)
                 this.selectHighlighted({noFocus: true});
 
@@ -1515,7 +1515,7 @@
 
         /**
          * Get the desired width for the container element.  This is
-         * derived first from option `width` passed to select2, then
+         * derived first from Option `width` passed to select2, then
          * the inline 'style' on the original element, and finally
          * falls back to the jQuery calculated element width.
          */
@@ -1859,7 +1859,7 @@
 
         // single
         getPlaceholder: function() {
-            // if a placeholder is specified on a single select without the first empty option ignore it
+            // if a placeholder is specified on a single select without the first empty Option ignore it
             if (this.select) {
                 if (this.select.find("option").first().text() !== "") {
                     return undefined;
@@ -1875,8 +1875,8 @@
 
             if (this.opts.element.val() === "" && placeholder !== undefined) {
 
-                // check for a first blank option if attached to a select
-                if (this.select && this.select.find("option:first").text() !== "") return;
+                // check for a first blank Option if attached to a select
+                if (this.select && this.select.find("Option:first").text() !== "") return;
 
                 this.selection.find("span").html(this.opts.escapeMarkup(placeholder));
 

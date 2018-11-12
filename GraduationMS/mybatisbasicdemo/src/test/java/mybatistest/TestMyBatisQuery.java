@@ -7,19 +7,22 @@ import org.junit.Test;
 import java.util.List;
 
 public class TestMyBatisQuery extends TestMyBatisBase {
+
     @Test
     public void Query() {
-        QuickNavigationMapper quickNavigationMapper =
-                sqlSession.getMapper(QuickNavigationMapper.class);
+        QuickNavigationMapper quickNavigationMapper = sqlSession.getMapper(QuickNavigationMapper.class);
         QuickNavigationWithBLOBs result = quickNavigationMapper.selectByPrimaryKey("2ce64a8c-95e4-40e2-903f-579b73efe1f9");
         System.out.println(result.getText().toString());
 
         List<QuickNavigationWithBLOBs> quickNavigations = quickNavigationMapper.selectAll();
         for (QuickNavigationWithBLOBs item :
                 quickNavigations) {
-            System.out.println(item.getText().toString());
+            System.out.println("ID: " + item.getId().toString()
+                    + "\t Text: " + item.getText().toString()
+                    + "\t Href: " + item.getHref().toString()
+                    + "\t Background Color: " + item.getBackgroudcolor().toString()
+                    + "\t Icon: " + item.getIcon().toString());
         }
-
         sqlSession.close();
     }
 }

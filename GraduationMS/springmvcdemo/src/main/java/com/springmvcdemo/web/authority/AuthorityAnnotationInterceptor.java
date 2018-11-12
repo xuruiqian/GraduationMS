@@ -1,7 +1,7 @@
 package com.springmvcdemo.web.authority;
 
-import com.springmvcdemo.domain.entity.User;
-import com.springmvcdemo.domain.option.AuthorityType;
+import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
+import com.springmvcdemo.DataRepository.Option.AuthorityType;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -61,12 +61,12 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
     }
 
     public boolean checkSession(HttpServletRequest request) {
-        User user = (User) request.getSession().getAttribute("currentUser");
+        UserWithBLOBs user = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
         return user != null;
     }
 
     public boolean checkPermission(HttpServletRequest request) {
-        User user = (User) request.getSession().getAttribute("currentUser");
+        UserWithBLOBs user = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
         return user != null;
     }
 }

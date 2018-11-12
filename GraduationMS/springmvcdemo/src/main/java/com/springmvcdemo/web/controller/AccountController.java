@@ -1,6 +1,6 @@
 package com.springmvcdemo.web.controller;
 
-import com.springmvcdemo.domain.entity.User;
+import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,8 +24,8 @@ public class AccountController extends ControllerBase {
     @RequestMapping(value = "/DoLogin", method = RequestMethod.POST)
     public String PostLogin(@RequestParam("loginname") String loginname,
                             @RequestParam("password") String password) {
-        User user = new User();
-        user.setLoginname(loginname);
+        UserWithBLOBs user = new UserWithBLOBs();
+        user.setName(loginname);
         user.setPassword(password);
 
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder

@@ -1,7 +1,7 @@
 package com.springmvcdemo.web.controller;
 
+import com.springmvcdemo.DataRepository.Option.AuthorityType;
 import com.springmvcdemo.web.authority.Authority;
-import com.springmvcdemo.domain.option.AuthorityType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
