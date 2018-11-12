@@ -5,17 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Activemq/Activemq.iml" filepath="$PROJECT_DIR$/Infrastructure/Activemq/Activemq.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" filepath="$PROJECT_DIR$/Infrastructure/Audittrial/Audittrial.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" filepath="$PROJECT_DIR$/Infrastructure/Configuration/Configuration.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DataRepository/DataRepository.iml" filepath="$PROJECT_DIR$/DataRepository/DataRepository.iml" />
       <module fileurl="file://$PROJECT_DIR$/GraduationMS.iml" filepath="$PROJECT_DIR$/GraduationMS.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Infrastructure.iml" filepath="$PROJECT_DIR$/Infrastructure/Infrastructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Log/Log.iml" filepath="$PROJECT_DIR$/Infrastructure/Log/Log.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" filepath="$PROJECT_DIR$/Infrastructure/Logback/Logback.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Security/Security.iml" filepath="$PROJECT_DIR$/Infrastructure/Security/Security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Services/Services.iml" filepath="$PROJECT_DIR$/Services/Services.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Springmvc/Springmvc.iml" filepath="$PROJECT_DIR$/Springmvc/Springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" filepath="$PROJECT_DIR$/Infrastructure/Utilities/Utilities.iml" />
-      <module fileurl="file://$PROJECT_DIR$/WebServices/WebServices.iml" filepath="$PROJECT_DIR$/WebServices/WebServices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/activemqdemo/activemqdemo.iml" filepath="$PROJECT_DIR$/activemqdemo/activemqdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activemqbasicdemo/activemqbasicdemo.iml" filepath="$PROJECT_DIR$/activemqbasicdemo/activemqbasicdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" filepath="$PROJECT_DIR$/hibernatebasicdemo/hibernatebasicdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" filepath="$PROJECT_DIR$/mybatisbasicdemo/mybatisbasicdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaopdemo/springaopdemo.iml" filepath="$PROJECT_DIR$/springaopdemo/springaopdemo.iml" />
@@ -23,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/springbeandemo/springbeandemo.iml" filepath="$PROJECT_DIR$/springbeandemo/springbeandemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootdemo/springbootdemo.iml" filepath="$PROJECT_DIR$/springbootdemo/springbootdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" filepath="$PROJECT_DIR$/springmvcdemo/springmvcdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webservicesdemo/webservicesdemo.iml" filepath="$PROJECT_DIR$/webservicesdemo/webservicesdemo.iml" />
     </modules>
   </component>
 </project>

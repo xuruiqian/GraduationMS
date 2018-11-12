@@ -1,8 +1,8 @@
 package com.springaopdemo.services;
 
 public interface UserService {
-    public void add();
-    public void update(int a);
-    public void delete();
-    public void search();
+    void add();
+    void update(int a);
+    void delete();
+    void search();
 }

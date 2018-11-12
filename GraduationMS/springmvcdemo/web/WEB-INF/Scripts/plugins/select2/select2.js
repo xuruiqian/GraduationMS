@@ -209,8 +209,7 @@
             if (evaluated === false) { value = formula(); evaluated = true; }
             return value;
         };
-    };
-
+    }
     function installDebouncedScroll(threshold, element) {
         var notify = debounce(threshold, function (e) { element.trigger("scroll-debounced", e);});
         element.bind("scroll", function (e) {
@@ -1558,8 +1557,7 @@
                 } else {
                     return this.opts.width;
                 }
-            };
-
+            }
             var width = resolveContainerWidth.call(this);
             if (width !== null) {
                 this.container.css("width", width);
@@ -1726,7 +1724,7 @@
                         this.clear();
                     }
                     killEvent(e);
-                    return;
+
                 }
             }));
 
@@ -1779,7 +1777,7 @@
                 }));
             this.search.bind("focus", this.bind(function(){
                 this.container.addClass("select2-container-active");
-            }))
+            }));
 
             this.initContainerWidth();
             this.setPlaceholder();

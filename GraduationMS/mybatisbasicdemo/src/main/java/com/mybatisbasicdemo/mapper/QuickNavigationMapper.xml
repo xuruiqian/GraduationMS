@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatisbasicdemo.mapper.QuickNavigationMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatisbasicdemo.domain.QuickNavigation" >
+    <id column="ID" property="id" jdbcType="CHAR" />
+    <result column="IsDeleted" property="isdeleted" jdbcType="BIT" />
+    <result column="Remark" property="remark" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.mybatisbasicdemo.domain.QuickNavigationWithBLOBs" extends="BaseResultMap" >
+    <result column="Href" property="href" jdbcType="LONGVARCHAR" />
+    <result column="BackgroudColor" property="backgroudcolor" jdbcType="LONGVARCHAR" />
+    <result column="Icon" property="icon" jdbcType="LONGVARCHAR" />
+    <result column="Text" property="text" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, IsDeleted, Remark, CreateTime, UpdateTime
+  </sql>
+  <sql id="Blob_Column_List" >
+    Href, BackgroudColor, Icon, Text
+  </sql>
+  <select id="selectAll" resultMap="ResultMapWithBLOBs">
+    select
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_quicknavigation
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_quicknavigation
+    where ID = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_quicknavigation
+    where ID = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.mybatisbasicdemo.domain.QuickNavigationWithBLOBs" >
+    insert into tb_quicknavigation (ID, IsDeleted, Remark, 
+      CreateTime, UpdateTime, Href, 
+      BackgroudColor, Icon, Text
+      )
+    values (#{id,jdbcType=CHAR}, #{isdeleted,jdbcType=BIT}, #{remark,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP}, #{href,jdbcType=LONGVARCHAR}, 
+      #{backgroudcolor,jdbcType=LONGVARCHAR}, #{icon,jdbcType=LONGVARCHAR}, #{text,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.mybatisbasicdemo.domain.QuickNavigationWithBLOBs" >
+    insert into tb_quicknavigation
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted,
+      </if>
+      <if test="remark != null" >
+        Remark,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime,
+      </if>
+      <if test="href != null" >
+        Href,
+      </if>
+      <if test="backgroudcolor != null" >
+        BackgroudColor,
+      </if>
+      <if test="icon != null" >
+        Icon,
+      </if>
+      <if test="text != null" >
+        Text,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="href != null" >
+        #{href,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="backgroudcolor != null" >
+        #{backgroudcolor,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="icon != null" >
+        #{icon,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="text != null" >
+        #{text,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mybatisbasicdemo.domain.QuickNavigationWithBLOBs" >
+    update tb_quicknavigation
+    <set >
+      <if test="isdeleted != null" >
+        IsDeleted = #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        Remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="href != null" >
+        Href = #{href,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="backgroudcolor != null" >
+        BackgroudColor = #{backgroudcolor,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="icon != null" >
+        Icon = #{icon,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="text != null" >
+        Text = #{text,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.mybatisbasicdemo.domain.QuickNavigationWithBLOBs" >
+    update tb_quicknavigation
+    set IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      Href = #{href,jdbcType=LONGVARCHAR},
+      BackgroudColor = #{backgroudcolor,jdbcType=LONGVARCHAR},
+      Icon = #{icon,jdbcType=LONGVARCHAR},
+      Text = #{text,jdbcType=LONGVARCHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mybatisbasicdemo.domain.QuickNavigation" >
+    update tb_quicknavigation
+    set IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

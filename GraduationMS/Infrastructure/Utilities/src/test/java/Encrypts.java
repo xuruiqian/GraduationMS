@@ -12,7 +12,7 @@ public class Encrypts {
 
 
     @Test
-    public void TestEncrypDES() throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
+    public void TestEncrypDES() throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
         String msg = "123456";
         EncrypDES cncryp = new EncrypDES();
         byte[] encontent = cncryp.Encrytor(msg);
@@ -23,7 +23,7 @@ public class Encrypts {
     }
 
     @Test
-    public void TestEncrypDES3() throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
+    public void TestEncrypDES3() throws BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
         String msg = "123456";
         EncrypDES3 encryptor = new EncrypDES3();
         byte[] encontent = encryptor.Encrytor(msg);

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatisbasicdemo.mapper.PermissionGroupMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatisbasicdemo.domain.PermissionGroup" >
+    <id column="ID" property="id" jdbcType="CHAR" />
+    <result column="IsDeleted" property="isdeleted" jdbcType="BIT" />
+    <result column="Remark" property="remark" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="Role_ID" property="roleId" jdbcType="CHAR" />
+    <result column="User_ID" property="userId" jdbcType="CHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.mybatisbasicdemo.domain.PermissionGroup" extends="BaseResultMap" >
+    <result column="Name" property="name" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, IsDeleted, Remark, CreateTime, UpdateTime, Role_ID, User_ID
+  </sql>
+  <sql id="Blob_Column_List" >
+    Name
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_permissiongroup
+    where ID = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_permissiongroup
+    where ID = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.mybatisbasicdemo.domain.PermissionGroup" >
+    insert into tb_permissiongroup (ID, IsDeleted, Remark, 
+      CreateTime, UpdateTime, Role_ID, 
+      User_ID, Name)
+    values (#{id,jdbcType=CHAR}, #{isdeleted,jdbcType=BIT}, #{remark,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP}, #{roleId,jdbcType=CHAR}, 
+      #{userId,jdbcType=CHAR}, #{name,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mybatisbasicdemo.domain.PermissionGroup" >
+    insert into tb_permissiongroup
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted,
+      </if>
+      <if test="remark != null" >
+        Remark,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime,
+      </if>
+      <if test="roleId != null" >
+        Role_ID,
+      </if>
+      <if test="userId != null" >
+        User_ID,
+      </if>
+      <if test="name != null" >
+        Name,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="roleId != null" >
+        #{roleId,jdbcType=CHAR},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mybatisbasicdemo.domain.PermissionGroup" >
+    update tb_permissiongroup
+    <set >
+      <if test="isdeleted != null" >
+        IsDeleted = #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        Remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="roleId != null" >
+        Role_ID = #{roleId,jdbcType=CHAR},
+      </if>
+      <if test="userId != null" >
+        User_ID = #{userId,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        Name = #{name,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.mybatisbasicdemo.domain.PermissionGroup" >
+    update tb_permissiongroup
+    set IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      Role_ID = #{roleId,jdbcType=CHAR},
+      User_ID = #{userId,jdbcType=CHAR},
+      Name = #{name,jdbcType=LONGVARCHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mybatisbasicdemo.domain.PermissionGroup" >
+    update tb_permissiongroup
+    set IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      Role_ID = #{roleId,jdbcType=CHAR},
+      User_ID = #{userId,jdbcType=CHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

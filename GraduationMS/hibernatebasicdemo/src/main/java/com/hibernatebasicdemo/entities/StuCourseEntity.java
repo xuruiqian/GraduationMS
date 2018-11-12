@@ -37,9 +37,7 @@ public class StuCourseEntity {
         StuCourseEntity that = (StuCourseEntity) o;
 
         if (studentId != null ? !studentId.equals(that.studentId) : that.studentId != null) return false;
-        if (courseId != null ? !courseId.equals(that.courseId) : that.courseId != null) return false;
-
-        return true;
+        return courseId != null ? courseId.equals(that.courseId) : that.courseId == null;
     }
 
     @Override

@@ -13,7 +13,7 @@ public class TestErrOut {
     private static final Logger logger = Logger.getLogger(TestErrOut.class);
 
     @Test
-    public void TestLog() throws NoSuchPaddingException, NoSuchAlgorithmException, BadPaddingException, InvalidKeyException, IllegalBlockSizeException {
+    public void TestLog() {
         logger.debug("This is debug!");
         logger.info("This is info!");
         logger.warn("This is warn!");

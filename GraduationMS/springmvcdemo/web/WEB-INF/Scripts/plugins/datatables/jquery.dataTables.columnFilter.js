@@ -34,8 +34,8 @@
     var sTableId = "table";
     var sRangeFormat = "From {from} to {to}";
     //Array of the functions that will override sSearch_ parameters
-    var afnSearch_ = new Array();
-    var aiCustomSearch_Indexes = new Array();
+    var afnSearch_ = [];
+    var aiCustomSearch_Indexes = [];
 
     var oFunctionTimeout = null;
 
@@ -247,7 +247,7 @@
 
         return this.each(function () {
 
-            asInitVals = new Array();
+            asInitVals = [];
             var sFilterRow = "tfoot tr";
             if (properties.sPlaceHolder == "head:after") {
                 sFilterRow = "thead tr:last";
@@ -274,7 +274,7 @@
                     if (aoColumn.sRangeFormat != null)
                         sRangeFormat = aoColumn.sRangeFormat;
                     else
-                        sRangeFormat = properties.sRangeFormat
+                        sRangeFormat = properties.sRangeFormat;
                     switch (aoColumn.type) {
                         case "number":
                             fnCreateInput(true, false, true);
@@ -305,7 +305,7 @@
                 var index = aiCustomSearch_Indexes[j];
                 var fnSearch_ = function () {
                     return $("#range_from_" + index).val() + properties.sRangeSeparator + $("#range_to_" + index).val()
-                }
+                };
                 afnSearch_.push(fnSearch_);
             }
 

@@ -17,7 +17,7 @@ public class SpringTest {
 
     //在setUp这个方法得到spring容器
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
     }
 

@@ -11,8 +11,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <tiles:insertAttribute name="meta"/>
     <title><tiles:insertAttribute name="title"/></title>
+    <tiles:insertAttribute name="meta"/>
     <tiles:insertAttribute name="style"/>
 </head>
 <body class='contrast-red '>

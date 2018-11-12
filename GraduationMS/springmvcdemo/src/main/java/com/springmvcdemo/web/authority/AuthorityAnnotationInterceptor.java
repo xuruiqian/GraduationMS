@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 
 public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
         System.out.println("authority checking...");
         if (handler instanceof HandlerMethod) {
             HandlerMethod hm = (HandlerMethod) handler;
@@ -62,17 +62,11 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
 
     public boolean checkSession(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("currentUser");
-        if (user != null)
-            return true;
-        else
-            return false;
+        return user != null;
     }
 
     public boolean checkPermission(HttpServletRequest request) {
         User user = (User) request.getSession().getAttribute("currentUser");
-        if (user != null)
-            return true;
-        else
-            return false;
+        return user != null;
     }
 }

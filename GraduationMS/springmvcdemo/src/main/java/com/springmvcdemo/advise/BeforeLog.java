@@ -11,8 +11,7 @@ public class BeforeLog implements MethodBeforeAdvice {
      * @param target 被调用的方法的目标对象
      * */
     @Override
-    public void before(Method method, Object[] args, Object target)
-            throws Throwable {
+    public void before(Method method, Object[] args, Object target) {
         System.out.println(target.getClass().getName()+"的"+method.getName()+"方法被执行");
     }
 }

@@ -19,7 +19,7 @@ public class ControllerBase implements HandlerExceptionResolver {
 
     //在setUp这个方法得到spring容器
     @Before
-    public void Init() throws Exception {
+    public void Init() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
     }
 

@@ -36,9 +36,7 @@ public class CoursesEntity {
         CoursesEntity that = (CoursesEntity) o;
 
         if (id != null ? !id.equals(that.id) : that.id != null) return false;
-        if (cname != null ? !cname.equals(that.cname) : that.cname != null) return false;
-
-        return true;
+        return cname != null ? cname.equals(that.cname) : that.cname == null;
     }
 
     @Override

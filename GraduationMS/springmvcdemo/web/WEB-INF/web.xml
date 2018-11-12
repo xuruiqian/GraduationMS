@@ -4,6 +4,33 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
     <display-name>SpringMVCDemo Web Application</display-name>
+    <!-- 配置编码方式过滤器,注意一点:要配置在所有过滤器的前面 -->
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- 配置编码过滤 -->
+    <filter>
+        <filter-name>EncoidingFilter</filter-name>
+        <filter-class>com.springmvcdemo.web.controller.Filter.EncoidingFilter</filter-class>
+        <init-param>
+            <param-name>Encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncoidingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -12,7 +39,6 @@
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
-
     <servlet>
         <!-- 声明Dispatcher，告诉Web容器我们将使用springMVC的DispatcherServlet -->
         <servlet-name>mvc-dispatcher-servlet</servlet-name>
@@ -24,6 +50,7 @@
             <param-value>/WEB-INF/mvc-dispatcher-servlet.xml</param-value>
         </init-param>
     </servlet>
+
     <!-- 配置url-pattern,设置为 / 拦截所有的URL请求，并映射到dispatcher -->
     <servlet-mapping>
         <servlet-name>mvc-dispatcher-servlet</servlet-name>

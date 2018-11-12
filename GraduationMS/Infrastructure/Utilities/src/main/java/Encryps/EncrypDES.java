@@ -10,7 +10,7 @@ public class EncrypDES {
     private Cipher c;    //该字节数组负责保存加密的结果
     private byte[] cipherByte;
 
-    public EncrypDES() throws NoSuchAlgorithmException, NoSuchPaddingException {
+    public EncrypDES() {
 //        Security.addProvider(new SunJCE());        //实例化支持DES算法的密钥生成器(算法名称命名需按规定，否则抛出异常)
 //        keygen = KeyGenerator.getInstance("DES");        //生成密钥
 //        deskey = keygen.generateKey();        //生成Cipher对象,指定其支持的DES算法

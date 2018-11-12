@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mybatisbasicdemo.mapper.MenuMapper" >
+  <resultMap id="BaseResultMap" type="com.mybatisbasicdemo.domain.Menu" >
+    <id column="ID" property="id" jdbcType="CHAR" />
+    <result column="ParentID" property="parentid" jdbcType="CHAR" />
+    <result column="IsDeleted" property="isdeleted" jdbcType="BIT" />
+    <result column="Remark" property="remark" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+    <result column="Menu_ID" property="menuId" jdbcType="CHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.mybatisbasicdemo.domain.MenuWithBLOBs" extends="BaseResultMap" >
+    <result column="Name" property="name" jdbcType="LONGVARCHAR" />
+    <result column="LinkUrl" property="linkurl" jdbcType="LONGVARCHAR" />
+    <result column="ImageUrl" property="imageurl" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, ParentID, IsDeleted, Remark, CreateTime, UpdateTime, Menu_ID
+  </sql>
+  <sql id="Blob_Column_List" >
+    Name, LinkUrl, ImageUrl
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from tb_menu
+    where ID = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_menu
+    where ID = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.mybatisbasicdemo.domain.MenuWithBLOBs" >
+    insert into tb_menu (ID, ParentID, IsDeleted, 
+      Remark, CreateTime, UpdateTime, 
+      Menu_ID, Name, LinkUrl, 
+      ImageUrl)
+    values (#{id,jdbcType=CHAR}, #{parentid,jdbcType=CHAR}, #{isdeleted,jdbcType=BIT}, 
+      #{remark,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{updatetime,jdbcType=TIMESTAMP}, 
+      #{menuId,jdbcType=CHAR}, #{name,jdbcType=LONGVARCHAR}, #{linkurl,jdbcType=LONGVARCHAR}, 
+      #{imageurl,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.mybatisbasicdemo.domain.MenuWithBLOBs" >
+    insert into tb_menu
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="parentid != null" >
+        ParentID,
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted,
+      </if>
+      <if test="remark != null" >
+        Remark,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime,
+      </if>
+      <if test="menuId != null" >
+        Menu_ID,
+      </if>
+      <if test="name != null" >
+        Name,
+      </if>
+      <if test="linkurl != null" >
+        LinkUrl,
+      </if>
+      <if test="imageurl != null" >
+        ImageUrl,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="parentid != null" >
+        #{parentid,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="menuId != null" >
+        #{menuId,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="linkurl != null" >
+        #{linkurl,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="imageurl != null" >
+        #{imageurl,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mybatisbasicdemo.domain.MenuWithBLOBs" >
+    update tb_menu
+    <set >
+      <if test="parentid != null" >
+        ParentID = #{parentid,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted = #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        Remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="menuId != null" >
+        Menu_ID = #{menuId,jdbcType=CHAR},
+      </if>
+      <if test="name != null" >
+        Name = #{name,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="linkurl != null" >
+        LinkUrl = #{linkurl,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="imageurl != null" >
+        ImageUrl = #{imageurl,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.mybatisbasicdemo.domain.MenuWithBLOBs" >
+    update tb_menu
+    set ParentID = #{parentid,jdbcType=CHAR},
+      IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      Menu_ID = #{menuId,jdbcType=CHAR},
+      Name = #{name,jdbcType=LONGVARCHAR},
+      LinkUrl = #{linkurl,jdbcType=LONGVARCHAR},
+      ImageUrl = #{imageurl,jdbcType=LONGVARCHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mybatisbasicdemo.domain.Menu" >
+    update tb_menu
+    set ParentID = #{parentid,jdbcType=CHAR},
+      IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      Menu_ID = #{menuId,jdbcType=CHAR}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+</mapper>
