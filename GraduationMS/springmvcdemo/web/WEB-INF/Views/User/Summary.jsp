@@ -1,10 +1,10 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ page import="com.springmvcdemo.domain.entity.User" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%
-    List<User> userList = (List<User>) request.getAttribute("userList");
+    List<UserWithBLOBs> userList = (List<UserWithBLOBs>) request.getAttribute("userList");
 %>
 <tiles:insertDefinition name="base.definition">
     <tiles:putAttribute name="title" value="User Summary"/>
@@ -45,14 +45,12 @@
                             <thead>
                             <tr>
                                 <th>User Name</th>
-                                <th>Login Name</th>
                                 <th>Password</th>
                             </tr>
                             </thead>
                             <c:forEach var="user" items="${userList}">
                             <tr>
-                                <td>${user.getUsername()}</td>
-                                <td>${user.getLoginname()}</td>
+                                <td>${user.getName()}</td>
                                 <td>${user.getPassword()}</td>
                             </tr>
                             </c:forEach>

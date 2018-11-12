@@ -19,12 +19,11 @@
                                 ' <div class="span7"> ' +
                                 '  <div class="control-group">' +
                                 '   <table class="table">' +
-                                '       <thead><tr><th>User Name</th><th>Login Name</th><th>Password</th></tr> </thead>';
+                                '       <thead><tr><th>User Name</th><th>Password</th></tr> </thead>';
                             $.each(data, function (commentIndex, comment) {
                                 html +=
                                     '   <tr> ' +
-                                    '       <td>' + comment['username'] + '</td>' +
-                                    '       <td>' + comment['loginname'] + '</td>' +
+                                    '       <td>' + comment['name'] + '</td>' +
                                     '       <td>' + comment['password'] + '</td>' +
                                     '   </tr>';
                             });

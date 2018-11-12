@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="com.springmvcdemo.domain.entity.User" %>
+<%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
 <%
-    User user = (User) request.getAttribute("user");
+    UserWithBLOBs user = (UserWithBLOBs) request.getAttribute("user");
 %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <tiles:insertDefinition name="base.definition">
@@ -43,13 +43,11 @@
                             <thead>
                             <tr>
                                 <th>User Name</th>
-                                <th>Login Name</th>
                                 <th>Password</th>
                             </tr>
                             </thead>
                             <tr>
-                                <td>${user.getUsername()}</td>
-                                <td>${user.getLoginname()}</td>
+                                <td>${user.getName()}</td>
                                 <td>${user.getPassword()}</td>
                             </tr>
                         </table>

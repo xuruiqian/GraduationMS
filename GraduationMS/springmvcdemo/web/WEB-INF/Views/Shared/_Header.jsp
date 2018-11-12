@@ -1,4 +1,4 @@
-<%@ page import="com.springmvcdemo.domain.entity.User" %>
+<%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%--
   Created by IntelliJ IDEA.
@@ -8,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%
-    User currentUser = (User) request.getSession().getAttribute("currentUser");
+    UserWithBLOBs currentUser = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
 %>
 <div class='navbar'>
     <div class='navbar-inner'>
@@ -173,7 +173,7 @@
                 <li class='dropdown dark user-menu'>
                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
                         <img alt='Mila Kunis' height='23' src='../Images/avatar.jpg' width='23'/>
-                        <span class='user-name hidden-phone'>${currentUser.getUsername()}</span>
+                        <span class='user-name hidden-phone'>${currentUser.getName()}</span>
                         <b class='caret'></b>
                     </a>
                     <ul class='dropdown-menu'>
