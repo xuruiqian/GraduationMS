@@ -8,7 +8,7 @@ public class Client {
     @Test
     public void Test() {
         ApplicationContext context = new ClassPathXmlApplicationContext(new String[]{"applicationContext.xml"});
-        Api api = (ApiTwo)context.getBean("api");
+        Api api = (ApiTwo)context.getBean("Api");
         String result = api.test(123);
         System.out.println("result = " + result);
     }

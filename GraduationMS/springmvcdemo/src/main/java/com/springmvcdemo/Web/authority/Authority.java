@@ -1,4 +1,4 @@
-package com.springmvcdemo.web.authority;
+package com.springmvcdemo.Web.Authority;
 
 import com.springmvcdemo.DataRepository.Option.AuthorityType;
 

@@ -1,4 +1,4 @@
-package com.springmvcdemo.web.controller;
+package com.springmvcdemo.Web.Controller;
 
 import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import org.springframework.stereotype.Controller;

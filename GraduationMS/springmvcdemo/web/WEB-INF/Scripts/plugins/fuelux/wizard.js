@@ -155,7 +155,7 @@
     // WIZARD DATA-API
 
     $(function () {
-        $('body').on('mousedown.wizard.data-api', '.wizard', function () {
+        $('body').on('mousedown.wizard.data-Api', '.wizard', function () {
             var $this = $(this);
             if ($this.data('wizard')) return;
             $this.wizard($this.data());

@@ -18,7 +18,7 @@
     <bean name="UserService" class="com.springmvcdemo.Service.Implementation.UserService" scope="singleton"></bean>
 
     <!--Authority Config-->
-    <bean class="com.springmvcdemo.web.authority.AuthorityAnnotationInterceptor"></bean>
+    <bean class="com.springmvcdemo.Web.Authority.AuthorityAnnotationInterceptor"></bean>
 
     <!--Aop Config-->
     <bean id="beforeLog" class="com.springmvcdemo.Advise.BeforeLog"/>
@@ -30,7 +30,7 @@
         <aop:advisor advice-ref="afterLog" pointcut-ref="servicepointcut"/>
     </aop:config>
     <aop:config>
-        <aop:pointcut expression="execution(* com.springmvcdemo.web.controller.*.*(..))" id="controllerpointcut"/>
+        <aop:pointcut expression="execution(* com.springmvcdemo.Web.Controller.*.*(..))" id="controllerpointcut"/>
         <aop:advisor advice-ref="beforeLog" pointcut-ref="controllerpointcut"/>
         <aop:advisor advice-ref="afterLog" pointcut-ref="controllerpointcut"/>
     </aop:config>

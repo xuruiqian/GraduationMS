@@ -1,4 +1,4 @@
-package com.springmvcdemo.web.authority;
+package com.springmvcdemo.Web.Authority;
 
 import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import com.springmvcdemo.DataRepository.Option.AuthorityType;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
-        System.out.println("authority checking...");
+        System.out.println("Authority checking...");
         if (handler instanceof HandlerMethod) {
             HandlerMethod hm = (HandlerMethod) handler;
             Class<?> clazz = hm.getBeanType();
@@ -47,7 +47,7 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
                                     return true;
                         }
                     }
-                    System.out.println("authority check no pass!");
+                    System.out.println("Authority check no pass!");
                     String url = "../../Account/Login";
                     response.getWriter().write("<script>top.location.href='" + url + "'</script>");
 
