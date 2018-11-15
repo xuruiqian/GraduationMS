@@ -5,7 +5,7 @@
   Time: 11:25 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <!DOCTYPE html>
@@ -15,19 +15,8 @@
     <tiles:insertAttribute name="meta"/>
     <tiles:insertAttribute name="style"/>
 </head>
-<body class='contrast-fb '>
-<header>
-    <tiles:insertAttribute name="header"/>
-</header>
-<div id="wrapper">
-    <div id='main-nav-bg'></div>
-    <nav id='main-nav'>
-        <tiles:insertAttribute name="navigation"/>
-    </nav>
-    <section id='content'>
-        <tiles:insertAttribute name="body"/>
-    </section>
-</div>
+<body class='contrast-fb sign-up contrast-background'>
+<tiles:insertAttribute name="body"/>
 <div id="footer">
     <tiles:insertAttribute name="footer"/>
     <div style="display: none;">

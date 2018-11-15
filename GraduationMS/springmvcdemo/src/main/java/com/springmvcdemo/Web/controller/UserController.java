@@ -27,7 +27,7 @@ public class UserController extends ControllerBase {
         userList = new ArrayList<UserWithBLOBs>();
     }
 
-    @Authority(AuthorityType.Validate)
+    @Authority(AuthorityType.NoAuthority)
     @RequestMapping(value = "summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
@@ -40,20 +40,20 @@ public class UserController extends ControllerBase {
     }
 
 
-    @Authority(AuthorityType.Validate)
+    @Authority(AuthorityType.NoAuthority)
     @RequestMapping(value = "/CreateForm", method = RequestMethod.GET)
     public String GetUserCreate() {
         return "/User/Create";
     }
 
 
-    @Authority(AuthorityType.Validate)
+    @Authority(AuthorityType.NoAuthority)
     @RequestMapping(value = "/Create", method = RequestMethod.POST)
     public String PostUserCreate() {
         return "redirect:/User/Detail";
     }
 
-    @Authority(AuthorityType.Validate)
+    @Authority(AuthorityType.NoAuthority)
     @RequestMapping(value = "detail", method = RequestMethod.GET)
     public ModelAndView GetUserDetail() {
         UserWithBLOBs user = new UserWithBLOBs();

@@ -48,7 +48,7 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
                         }
                     }
                     System.out.println("Authority check no pass!");
-                    String url = "../../Account/Login";
+                    String url = "../../account/signin";
                     response.getWriter().write("<script>top.location.href='" + url + "'</script>");
 
                     return false;
@@ -62,11 +62,12 @@ public class AuthorityAnnotationInterceptor extends HandlerInterceptorAdapter {
 
     public boolean checkSession(HttpServletRequest request) {
         UserWithBLOBs user = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
-        return user != null;
+        boolean hasSettion = user != null;
+        return hasSettion;
     }
 
     public boolean checkPermission(HttpServletRequest request) {
-        UserWithBLOBs user = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
-        return user != null;
+
+        return true;
     }
 }
