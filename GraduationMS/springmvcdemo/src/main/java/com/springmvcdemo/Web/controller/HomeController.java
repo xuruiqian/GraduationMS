@@ -14,7 +14,7 @@ public class HomeController  extends ControllerBase {
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String GetIndex() {
         System.out.println("hello,GetIndex!");
-        return "home/index";
+        return "Home/Index";
     }
 
 
@@ -22,7 +22,7 @@ public class HomeController  extends ControllerBase {
     @RequestMapping(value = "/index", method = RequestMethod.POST)
     public String PostIndex() {
         System.out.println("hello,PostIndex!");
-        return "home/index";
+        return "Home/Index";
     }
 
 
@@ -30,6 +30,6 @@ public class HomeController  extends ControllerBase {
     @RequestMapping(value = "/welcome", method = RequestMethod.GET)
     public String PostWelcome() {
         System.out.println("hello,PostWelcome!");
-        return "home/Welcome";
+        return "Home/Welcome";
     }
 }
