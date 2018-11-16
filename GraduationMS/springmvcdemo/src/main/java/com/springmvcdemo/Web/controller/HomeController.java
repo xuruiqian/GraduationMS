@@ -7,29 +7,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/home")
+@RequestMapping(value = "/Home")
 public class HomeController  extends ControllerBase {
-
-    @Authority(AuthorityType.NoAuthority)
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "/Index", method = RequestMethod.GET)
     public String GetIndex() {
         System.out.println("hello,GetIndex!");
         return "Home/Index";
     }
 
 
-    @Authority(AuthorityType.NoAuthority)
-    @RequestMapping(value = "/index", method = RequestMethod.POST)
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "/Index", method = RequestMethod.POST)
     public String PostIndex() {
         System.out.println("hello,PostIndex!");
         return "Home/Index";
-    }
-
-
-    @Authority(AuthorityType.NoAuthority)
-    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
-    public String PostWelcome() {
-        System.out.println("hello,PostWelcome!");
-        return "Home/Welcome";
     }
 }

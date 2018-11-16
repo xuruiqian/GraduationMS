@@ -1,11 +1,11 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <tiles:insertDefinition name="layoutAccount.definition">
-    <tiles:putAttribute name="title" value="Sign In"/>
+    <tiles:putAttribute name="title" value="Sign Up"/>
     <tiles:putAttribute name="body">
         <div id='wrapper'>
             <div class='application'>
                 <div class='application-content'>
-                    <a href="../../account/signin">
+                    <a href="../../Account/SignIn">
                         <div class='icon-heart'></div>
                         <span>Flatty</span>
                     </a>
@@ -15,7 +15,7 @@
                 <div class='caret'></div>
                 <div class='form-wrapper'>
                     <h1 class='text-center'>Sign up</h1>
-                    <form accept-charset="UTF-8" action="../../account/PostSignUp" method="POST">
+                    <form accept-charset="UTF-8" action="../../Account/PostSignUp" method="POST">
                         <div style="margin:0;padding:0;display:inline">
                             <input name="utf8" type="hidden" value="&#x2713;"/>
                         </div>
@@ -57,14 +57,14 @@
                     </form>
                     <div class='text-center'>
                         <hr class='hr-normal'/>
-                        <a href="../../account/signin"><i class='icon-chevron-left'></i>
+                        <a href="../../Account/SignIn"><i class='icon-chevron-left'></i>
                             Go back to sign in
                         </a>
                     </div>
                 </div>
             </div>
             <div class='login-action text-center'>
-                <a href="../../account/findbackpassword"><i class='icon-lock'></i>
+                <a href="../../Account/FindBackPassword"><i class='icon-lock'></i>
                     Forgot your password?
                 </a>
             </div>

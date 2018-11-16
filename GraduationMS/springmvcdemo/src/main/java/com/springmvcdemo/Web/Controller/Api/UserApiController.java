@@ -19,7 +19,7 @@ import java.util.List;
 public class UserApiController extends ControllerBase {
 
     @ResponseBody
-    @Authority(AuthorityType.Validate)
+    @Authority(AuthorityType.HasSessionAndPermission)
     @RequestMapping(value = "/Summary", method = RequestMethod.GET)
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");

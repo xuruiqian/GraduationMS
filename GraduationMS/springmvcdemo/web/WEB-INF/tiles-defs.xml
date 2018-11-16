@@ -19,4 +19,17 @@
         <put-attribute name="footer" value="/WEB-INF/Views/Shared/_Footer.jsp"/>
         <put-attribute name="style" value="/WEB-INF/Views/Shared/_Styles.jsp"/>
     </definition>
+    <definition name="layoutError.definition" template="/WEB-INF/Views/Shared/_LayoutError.jsp">
+        <put-attribute name="meta" value="/WEB-INF/Views/Shared/_Meta.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/Views/Shared/_Scripts.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="footer" value="/WEB-INF/Views/Shared/_Footer.jsp"/>
+        <put-attribute name="style" value="/WEB-INF/Views/Shared/_Styles.jsp"/>
+    </definition>
+    <definition name="subPage.definition" template="/WEB-INF/Views/Shared/_LayoutSubPage.jsp">
+        <put-attribute name="meta" value="/WEB-INF/Views/Shared/_Meta.jsp"/>
+        <put-attribute name="script" value="/WEB-INF/Views/Shared/_Scripts.jsp"/>
+        <put-attribute name="body"/>
+        <put-attribute name="style" value="/WEB-INF/Views/Shared/_Styles.jsp"/>
+    </definition>
 </tiles-definitions>

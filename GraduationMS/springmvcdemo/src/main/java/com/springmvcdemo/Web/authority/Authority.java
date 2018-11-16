@@ -11,5 +11,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Documented
 public @interface Authority {
-    AuthorityType value() default AuthorityType.Validate;
+    AuthorityType value() default AuthorityType.HasSession;
 }

@@ -5,7 +5,7 @@
         <div id='wrapper'>
             <div class='application'>
                 <div class='application-content'>
-                    <a href="../../account/signin">
+                    <a href="../../Account/SignIn">
                         <div class='icon-heart'></div>
                         <span>Flatty</span>
                     </a>
@@ -15,7 +15,7 @@
                 <div class='caret'></div>
                 <div class='form-wrapper'>
                     <h1 class='text-center'>Sign in</h1>
-                    <form accept-charset="UTF-8" action="../../account/PostSignIn" method="POST">
+                    <form accept-charset="UTF-8" action="../../Account/PostSignIn" method="POST">
                         <div style="margin:0;padding:0;display:inline">
                             <input name="utf8" type="hidden" value="&#x2713;"/>
                         </div>
@@ -41,12 +41,12 @@
                     </form>
                     <div class='text-center'>
                         <hr class='hr-normal'/>
-                        <a href="../../account/findbackpassword">Forgot your password?</a>
+                        <a href="../../Account/FindBackPassword">Forgot your password?</a>
                     </div>
                 </div>
             </div>
             <div class='login-action text-center'>
-                <a href="../../account/signup"><i class='icon-user'></i>
+                <a href="../../Account/SignUp"><i class='icon-user'></i>
                     New to Flatty?
                     <strong>Sign up</strong>
                 </a>

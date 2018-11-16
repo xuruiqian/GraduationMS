@@ -7,7 +7,7 @@
 --%>
 <div class='navigation'>
     <div class='search'>
-        <form accept-charset="UTF-8" action="search_results.html" method="get">
+        <form accept-charset="UTF-8" method="get">
             <div style="margin:0;padding:0;display:inline">
                 <input name="utf8" type="hidden" value="&#x2713;"/>
             </div>
@@ -21,70 +21,37 @@
     </div>
     <ul class='nav nav-stacked'>
         <li class=''>
-            <a href='index.html'>
+            <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                 <i class='icon-dashboard'></i>
                 <span>Dashboard</span>
             </a>
         </li>
         <li class='active'>
             <a class='dropdown-collapse' href='#'>
-                <i class='icon-edit'></i>
-                <span>Forms</span>
+                <i class='icon-user'></i>
+                <span>Security Management</span>
                 <i class='icon-angle-down angle-down'></i>
             </a>
             <ul class='in nav nav-stacked'>
                 <li class='active'>
-                    <a href='form_styles.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Form styles and features</span>
+                    <a href="javascript:ShowLeftSubPage('../../User/Summary');">
+                        <i class='icon-user'></i>
+                        <span>User Management</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='form_components.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Form components</span>
+                    <a href="javascript:ShowLeftSubPage('../../User/Summary');">
+                        <i class='icon-user'></i>
+                        <span>Role Management</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='validations.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Validations</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href='wizard.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Wizard</span>
+                    <a href="javascript:ShowLeftSubPage('../../User/Summary');">
+                        <i class='icon-user'></i>
+                        <span>Permission Management</span>
                     </a>
                 </li>
             </ul>
-        </li>
-        <li>
-            <a class='dropdown-collapse ' href='#'>
-                <i class='icon-tint'></i>
-                <span>UI Elements & Widgets</span>
-                <i class='icon-angle-down angle-down'></i>
-            </a>
-            <ul class='nav nav-stacked'>
-                <li class=''>
-                    <a href='ui_elements.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>UI Elements</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href='widgets.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Widgets</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class=''>
-            <a href='buttons_and_icons.html'>
-                <i class='icon-star'></i>
-                <span>Buttons & Icons</span>
-            </a>
         </li>
         <li>
             <a class='dropdown-collapse ' href='#'>
@@ -94,78 +61,54 @@
             </a>
             <ul class='nav nav-stacked'>
                 <li class=''>
-                    <a href='charts.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-bar-chart'></i>
                         <span>Charts</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='address_book.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-envelope'></i>
                         <span>Address book</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='chats.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-comments'></i>
                         <span>Chats</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='inplace_editing.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-pencil'></i>
                         <span>In-place editing</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='filetrees.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-list-ul'></i>
                         <span>File trees</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='fileupload.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-file'></i>
                         <span>Fileupload</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='todo.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-list-alt'></i>
                         <span>Todo list</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='wysiwyg.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-paste'></i>
                         <span>WYSIWYG</span>
                     </a>
                 </li>
             </ul>
-        </li>
-        <li class=''>
-            <a href='tables.html'>
-                <i class='icon-table'></i>
-                <span>Tables</span>
-            </a>
-        </li>
-        <li class=''>
-            <a href='grid.html'>
-                <i class='icon-th'></i>
-                <span>Grid</span>
-            </a>
-        </li>
-        <li class=''>
-            <a href='type.html'>
-                <i class='icon-font'></i>
-                <span>Typography</span>
-            </a>
-        </li>
-        <li class=''>
-            <a href='calendar.html'>
-                <i class='icon-calendar'></i>
-                <span>Calendar</span>
-            </a>
         </li>
         <li>
             <a class='dropdown-collapse ' href='#'>
@@ -175,154 +118,76 @@
             </a>
             <ul class='nav nav-stacked'>
                 <li class=''>
-                    <a href='invoice.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-money'></i>
                         <span>Invoice</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='gallery.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-picture'></i>
                         <span>Gallery</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='timeline.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-time'></i>
                         <span>Timeline</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='pricing_tables.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-table'></i>
                         <span>Pricing tables</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='user_profile.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-user'></i>
                         <span>User profile</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='err404.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-question-sign'></i>
                         <span>404 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='err500.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-cogs'></i>
                         <span>500 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='sign_in.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-signin'></i>
                         <span>Sign in</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='faq.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-bullhorn'></i>
                         <span>FAQ</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='orders.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-inbox'></i>
                         <span>Orders</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='search_results.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-search'></i>
                         <span>Search results</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href='blank.html'>
+                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
                         <i class='icon-circle-blank'></i>
                         <span>Blank page</span>
                     </a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a class='dropdown-collapse ' href='#'>
-                <i class='icon-cog'></i>
-                <span>Layouts</span>
-                <i class='icon-angle-down angle-down'></i>
-            </a>
-            <ul class='nav nav-stacked'>
-                <li class=''>
-                    <a href='closed_navigation.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Closed navigation</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href='fixed_header.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Fixed header</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href='fixed_navigation.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Fixed navigation</span>
-                    </a>
-                </li>
-                <li class=''>
-                    <a href='fixed_navigation_and_header.html'>
-                        <i class='icon-caret-right'></i>
-                        <span>Fixed navigation & header</span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class=''>
-            <a href='email_templates.html'>
-                <i class='icon-mail-reply'></i>
-                <span>Email templates</span>
-            </a>
-        </li>
-        <li>
-            <a class='dropdown-collapse' href='#'>
-                <i class='icon-folder-open-alt'></i>
-                <span>Four level dropdown</span>
-                <i class='icon-angle-down angle-down'></i>
-            </a>
-            <ul class='nav nav-stacked'>
-                <li>
-                    <a class='dropdown-collapse' href='#'>
-                        <i class='icon-caret-right'></i>
-                        <span>Second level</span>
-                        <i class='icon-angle-down angle-down'></i>
-                    </a>
-                    <ul class='nav nav-stacked'>
-                        <li>
-                            <a class='dropdown-collapse' href='#'>
-                                <i class='icon-caret-right'></i>
-                                <span>Third level</span>
-                                <i class='icon-angle-down angle-down'></i>
-                            </a>
-                            <ul class='nav nav-stacked'>
-                                <li>
-                                    <a href='#'>
-                                        <i class='icon-caret-right'></i>
-                                        <span>Fourth level</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#'>
-                                        <i class='icon-caret-right'></i>
-                                        <span>Another fourth level</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </li>

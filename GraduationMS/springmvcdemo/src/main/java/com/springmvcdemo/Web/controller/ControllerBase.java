@@ -33,6 +33,6 @@ public class ControllerBase implements HandlerExceptionResolver {
                                          Exception e) {
         System.out.println(e);
         logger.error(e.getStackTrace().toString());
-        return new ModelAndView("redirect:/Help/500.html");
+        return new ModelAndView("redirect:/Error/500");
     }
 }

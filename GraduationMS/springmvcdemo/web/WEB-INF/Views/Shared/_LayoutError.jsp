@@ -14,29 +14,9 @@
     <title><tiles:insertAttribute name="title"/></title>
     <tiles:insertAttribute name="meta"/>
     <tiles:insertAttribute name="style"/>
-    <script>
-        function ShowLeftSubPage(url) {
-            console.info(url);
-            if (url != null)
-                document.getElementById("iframeBody").src = url;
-            else
-                alert("url is null!");
-        }
-    </script>
 </head>
-<body class='contrast-fb '>
-<header>
-    <tiles:insertAttribute name="header"/>
-</header>
-<div id="wrapper" style="width:100%;">
-    <div id='main-nav-bg'></div>
-    <nav id='main-nav'>
-        <tiles:insertAttribute name="navigation"/>
-    </nav>
-    <section id='content' style="width:100%;height:1080px;">
-        <tiles:insertAttribute name="body"/>
-    </section>
-</div>
+<body class='contrast-fb application-error 404-error contrast-background'>
+<tiles:insertAttribute name="body"/>
 <div id="footer">
     <tiles:insertAttribute name="footer"/>
     <div style="display: none;">

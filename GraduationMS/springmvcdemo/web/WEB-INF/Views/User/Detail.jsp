@@ -4,7 +4,7 @@
     UserWithBLOBs user = (UserWithBLOBs) request.getAttribute("user");
 %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
-<tiles:insertDefinition name="base.definition">
+<tiles:insertDefinition name="subPage.definition">
     <tiles:putAttribute name="title" value="User Detail"/>
     <tiles:putAttribute name="body">
         <div class="container-fluid">

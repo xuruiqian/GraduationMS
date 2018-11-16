@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping(value = "/account")
+@RequestMapping(value = "/Account")
 public class AccountController extends ControllerBase {
 
     /**
@@ -23,12 +23,12 @@ public class AccountController extends ControllerBase {
      *
      * @return
      */
-    @RequestMapping(value = "/signup", method = RequestMethod.GET)
+    @RequestMapping(value = "/SignUp", method = RequestMethod.GET)
     public String GetSignUp() {
         return "/Account/SignUp";
     }
 
-    @Authority(AuthorityType.NoValidate)
+    @Authority(AuthorityType.Pass)
     @RequestMapping(value = "/PostSignUp", method = RequestMethod.POST)
     public String PostSignUp(@RequestParam("username") String username,
                              @RequestParam("email") String email,
@@ -36,7 +36,7 @@ public class AccountController extends ControllerBase {
                              @RequestParam("password_confirmation") String password_confirmation,
                              @RequestParam(value = "agreement", required = false) String agreement) {
 
-        return "redirect:/account/signin";
+        return "redirect:/Account/SignIn";
     }
 
     /**
@@ -44,13 +44,13 @@ public class AccountController extends ControllerBase {
      *
      * @return
      */
-    @Authority(AuthorityType.NoValidate)
-    @RequestMapping(value = "/signin", method = RequestMethod.GET)
+    @Authority(AuthorityType.Pass)
+    @RequestMapping(value = "/SignIn", method = RequestMethod.GET)
     public String GetSignIn() {
         return "/Account/SignIn";
     }
 
-    @Authority(AuthorityType.NoValidate)
+    @Authority(AuthorityType.Pass)
     @RequestMapping(value = "/PostSignIn", method = RequestMethod.POST)
     public String PostSignIn(@RequestParam("username") String username,
                              @RequestParam("password") String password,
@@ -67,7 +67,7 @@ public class AccountController extends ControllerBase {
 
         request.getSession().setAttribute("currentUser", user);
 
-        return "redirect:/home/index";
+        return "redirect:/Main.html";
     }
 
     /**
@@ -75,17 +75,17 @@ public class AccountController extends ControllerBase {
      *
      * @return
      */
-    @Authority(AuthorityType.NoValidate)
-    @RequestMapping(value = "/findbackpassword", method = RequestMethod.GET)
+    @Authority(AuthorityType.Pass)
+    @RequestMapping(value = "/FindBackPassword", method = RequestMethod.GET)
     public String GetFindBackPassword() {
         return "/Account/FindBackPassword";
     }
 
-    @Authority(AuthorityType.NoValidate)
+    @Authority(AuthorityType.Pass)
     @RequestMapping(value = "/PostFindBackPassword", method = RequestMethod.POST)
     public String PostFindBackPassword(@RequestParam("email") String email,
-                                       @RequestParam("password") String password) {
+                                       @RequestParam(value="password",required = false) String password) {
 
-        return "redirect:/account/signin";
+        return "redirect:/Account/SignIn";
     }
 }

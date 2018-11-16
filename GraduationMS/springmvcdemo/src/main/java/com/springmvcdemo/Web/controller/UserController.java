@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping(value = "user")
+@RequestMapping(value = "User")
 public class UserController extends ControllerBase {
     private static final Log logger = LogFactory.getLog(UserController.class);
     private static List<UserWithBLOBs> userList;
@@ -27,8 +27,8 @@ public class UserController extends ControllerBase {
         userList = new ArrayList<UserWithBLOBs>();
     }
 
-    @Authority(AuthorityType.NoAuthority)
-    @RequestMapping(value = "summary", method = RequestMethod.GET)
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "Summary", method = RequestMethod.GET)
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         IUserService us = (IUserService) applicationContext.getBean("UserService");
@@ -40,21 +40,21 @@ public class UserController extends ControllerBase {
     }
 
 
-    @Authority(AuthorityType.NoAuthority)
+    @Authority(AuthorityType.HasSession)
     @RequestMapping(value = "/CreateForm", method = RequestMethod.GET)
     public String GetUserCreate() {
         return "/User/Create";
     }
 
 
-    @Authority(AuthorityType.NoAuthority)
+    @Authority(AuthorityType.HasSession)
     @RequestMapping(value = "/Create", method = RequestMethod.POST)
     public String PostUserCreate() {
         return "redirect:/User/Detail";
     }
 
-    @Authority(AuthorityType.NoAuthority)
-    @RequestMapping(value = "detail", method = RequestMethod.GET)
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "Detail", method = RequestMethod.GET)
     public ModelAndView GetUserDetail() {
         UserWithBLOBs user = new UserWithBLOBs();
         user.setName("User-" + 1);

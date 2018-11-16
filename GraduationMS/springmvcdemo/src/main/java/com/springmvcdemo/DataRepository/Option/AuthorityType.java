@@ -1,10 +1,16 @@
 package com.springmvcdemo.DataRepository.Option;
 
 public enum AuthorityType {
-    // 登录和权限都验证 默认
-    Validate,
-    // 不验证
-    NoValidate,
-    // 不验证权限
-    NoAuthority
+    /**
+     * 验证是否登录
+     */
+    Pass,
+    /**
+     * 验证是否登录
+     */
+    HasSession,
+    /**
+     * 验证是否登录以及是否有权限
+     */
+    HasSessionAndPermission
 }

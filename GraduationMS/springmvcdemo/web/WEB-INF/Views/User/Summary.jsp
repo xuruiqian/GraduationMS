@@ -6,7 +6,7 @@
 <%
     List<UserWithBLOBs> userList = (List<UserWithBLOBs>) request.getAttribute("userList");
 %>
-<tiles:insertDefinition name="base.definition">
+<tiles:insertDefinition name="subPage.definition">
     <tiles:putAttribute name="title" value="User Summary"/>
     <tiles:putAttribute name="body">
         <div class="container-fluid">

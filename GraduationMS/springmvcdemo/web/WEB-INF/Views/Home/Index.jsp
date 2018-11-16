@@ -1,5 +1,5 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
-<tiles:insertDefinition name="base.definition">
+<tiles:insertDefinition name="subPage.definition">
     <tiles:putAttribute name="title" value="example index.jsp"/>
     <tiles:putAttribute name="body">
         <input type="button" id="send" value="Get Data by async"/>

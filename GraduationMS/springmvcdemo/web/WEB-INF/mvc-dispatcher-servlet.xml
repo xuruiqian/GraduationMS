@@ -15,7 +15,9 @@
     <mvc:default-servlet-handler/>
     <!-- if you use annotation you must configure following setting -->
     <mvc:annotation-driven/>
-
+    <mvc:interceptors>
+        <bean class="com.springmvcdemo.Web.Authority.AuthorityAnnotationInterceptor"></bean>
+    </mvc:interceptors>
     <!--Static resources config: Allow static resources can be request directly.-->
     <mvc:resources mapping="/Scripts/**" location="/WEB-INF/Scripts/"/>
     <mvc:resources mapping="/Images/**" location="/WEB-INF/Images/"/>
@@ -23,9 +25,6 @@
     <mvc:resources mapping="/Fonts/**" location="/WEB-INF/Fonts/"/>
     <mvc:resources mapping="/Help/**" location="/WEB-INF/Help/"/>
 
-    <mvc:interceptors>
-        <bean class="com.springmvcdemo.Web.Authority.AuthorityAnnotationInterceptor"></bean>
-    </mvc:interceptors>
     <!-- configure the InternalResourceViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/Views/"/>
