@@ -10,6 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -55,7 +56,16 @@ public class UserController extends ControllerBase {
 
     @Authority(AuthorityType.HasSession)
     @RequestMapping(value = "Detail", method = RequestMethod.GET)
-    public ModelAndView GetUserDetail() {
+    public ModelAndView GetUserDetail(@RequestParam("username") String username) {
+        UserWithBLOBs user = new UserWithBLOBs();
+        user.setName("User-" + 1);
+        user.setPassword("Password-" + 1);
+
+        return new ModelAndView("/User/Detail", "user", user);
+    }
+    @Authority(AuthorityType.HasSession)
+    @RequestMapping(value = "Profile", method = RequestMethod.GET)
+    public ModelAndView GetUserProfile(@RequestParam("username") String username) {
         UserWithBLOBs user = new UserWithBLOBs();
         user.setName("User-" + 1);
         user.setPassword("Password-" + 1);

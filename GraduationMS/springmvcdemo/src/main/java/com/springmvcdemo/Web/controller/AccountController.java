@@ -71,6 +71,28 @@ public class AccountController extends ControllerBase {
     }
 
     /**
+     * Sign Out
+     *
+     * @return
+     */
+    @RequestMapping(value = "/SignOut", method = RequestMethod.GET)
+    public String GetSignOut(@RequestParam("username") String username) {
+        UserWithBLOBs user = new UserWithBLOBs();
+        user.setName(username);
+
+        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder
+                .getRequestAttributes())
+                .getRequest();
+        ServletWebRequest servletWebRequest = new ServletWebRequest(request);
+        HttpServletResponse response = servletWebRequest.getResponse();
+
+        request.getSession().setAttribute("currentUser", null);
+
+        return "redirect:/Account/SignIn";
+    }
+
+
+    /**
      * Find back password
      *
      * @return

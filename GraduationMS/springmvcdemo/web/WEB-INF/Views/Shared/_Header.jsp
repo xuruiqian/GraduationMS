@@ -109,20 +109,20 @@
                     </a>
                     <ul class='dropdown-menu'>
                         <li>
-                            <a href='../../User/Detail?username=${currentUser.getName()} '>
+                            <a href="javascript:ShowLeftSubPage('../../User/Detail?username=${currentUser.getName()} ');">
                                 <i class='icon-user'></i>
                                 Profile
                             </a>
                         </li>
                         <li>
-                            <a href='../../User/Profile?username=${currentUser.getName()} '>
+                            <a href="javascript:ShowLeftSubPage('../../User/Profile?username=${currentUser.getName()} ');">
                                 <i class='icon-cog'></i>
                                 Settings
                             </a>
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='../../Account/SignOut?username=${currentUser.getName()} '>
+                            <a href="../../Account/SignOut?username=${currentUser.getName()} ">
                                 <i class='icon-signout'></i>
                                 Sign out
                             </a>
@@ -130,7 +130,7 @@
                     </ul>
                 </li>
             </ul>
-            <form accept-charset="UTF-8" action="../../Main/Search"
+            <form accept-charset="UTF-8" action="../../Search"
                   class="navbar-search pull-right hidden-phone"
                   method="post">
                 <div style="margin:0;padding:0;display:inline">
