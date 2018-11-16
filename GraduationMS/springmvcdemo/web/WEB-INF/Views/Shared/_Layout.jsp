@@ -19,8 +19,6 @@
             console.info(url);
             if (url != null)
                 document.getElementById("iframeBody").src = url;
-            else
-                alert("url is null!");
         }
     </script>
 </head>

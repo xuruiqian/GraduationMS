@@ -13,83 +13,14 @@
 <div class='navbar'>
     <div class='navbar-inner'>
         <div class='container-fluid'>
-            <a class='brand' href='index.html'>
-                <i class='icon-heart-empty'></i>
-                <span class='hidden-phone'>Flatty</span>
+            <a class='brand' href='../../Main.html'>
+                <i class='icon-leaf'></i>
+                <span class='hidden-phone'>General Management System</span>
             </a>
             <a class='toggle-nav btn pull-left' href='#'>
                 <i class='icon-reorder'></i>
             </a>
             <ul class='nav pull-right'>
-                <li class='dropdown light only-icon'>
-                    <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                        <i class='icon-adjust'></i>
-                    </a>
-                    <ul class='dropdown-menu color-settings'>
-                        <li class='color-settings-body-color'>
-                            <div class='color-title'>Body color</div>
-                            <a data-change-to='../Style/light-theme.css' href='#'>
-                                Light
-                                <small>(default)</small>
-                            </a>
-                            <a data-change-to='../Style/dark-theme.css' href='#'>
-                                Dark
-                            </a>
-                            <a data-change-to='../Style/dark-blue-theme.css' href='#'>
-                                Dark blue
-                            </a>
-                        </li>
-                        <li class='divider'></li>
-                        <li class='color-settings-contrast-color'>
-                            <div class='color-title'>Contrast color</div>
-                            <a href="#" data-change-to="contrast-red"><i class='icon-adjust text-red'></i>
-                                Red
-                                <small>(default)</small>
-                            </a>
-                            <a href="#" data-change-to="contrast-blue"><i class='icon-adjust text-blue'></i>
-                                Blue
-                            </a>
-                            <a href="#" data-change-to="contrast-orange"><i class='icon-adjust text-orange'></i>
-                                Orange
-                            </a>
-                            <a href="#" data-change-to="contrast-purple"><i class='icon-adjust text-purple'></i>
-                                Purple
-                            </a>
-                            <a href="#" data-change-to="contrast-green"><i class='icon-adjust text-green'></i>
-                                Green
-                            </a>
-                            <a href="#" data-change-to="contrast-muted"><i class='icon-adjust text-muted'></i>
-                                Muted
-                            </a>
-                            <a href="#" data-change-to="contrast-fb"><i class='icon-adjust text-fb'></i>
-                                Facebook
-                            </a>
-                            <a href="#" data-change-to="contrast-dark"><i class='icon-adjust text-dark'></i>
-                                Dark
-                            </a>
-                            <a href="#" data-change-to="contrast-pink"><i class='icon-adjust text-pink'></i>
-                                Pink
-                            </a>
-                            <a href="#" data-change-to="contrast-grass-green"><i
-                                    class='icon-adjust text-grass-green'></i>
-                                Grass green
-                            </a>
-                            <a href="#" data-change-to="contrast-sea-blue"><i class='icon-adjust text-sea-blue'></i>
-                                Sea blue
-                            </a>
-                            <a href="#" data-change-to="contrast-banana"><i class='icon-adjust text-banana'></i>
-                                Banana
-                            </a>
-                            <a href="#" data-change-to="contrast-dark-orange"><i
-                                    class='icon-adjust text-dark-orange'></i>
-                                Dark orange
-                            </a>
-                            <a href="#" data-change-to="contrast-brown"><i class='icon-adjust text-brown'></i>
-                                Brown
-                            </a>
-                        </li>
-                    </ul>
-                </li>
                 <li class='dropdown medium only-icon widget'>
                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
                         <i class='icon-rss'></i>
@@ -172,26 +103,26 @@
                 </li>
                 <li class='dropdown dark user-menu'>
                     <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                        <img alt='Mila Kunis' height='23' src='../Images/avatar.jpg' width='23'/>
+                        <img alt='${currentUser.getName()} ' height='23' src='../Images/avatar.jpg' width='23'/>
                         <span class='user-name hidden-phone'>${currentUser.getName()}</span>
                         <b class='caret'></b>
                     </a>
                     <ul class='dropdown-menu'>
                         <li>
-                            <a href='user_profile.html'>
+                            <a href='../../User/Detail?username=${currentUser.getName()} '>
                                 <i class='icon-user'></i>
                                 Profile
                             </a>
                         </li>
                         <li>
-                            <a href='user_profile.html'>
+                            <a href='../../User/Profile?username=${currentUser.getName()} '>
                                 <i class='icon-cog'></i>
                                 Settings
                             </a>
                         </li>
                         <li class='divider'></li>
                         <li>
-                            <a href='sign_in.html'>
+                            <a href='../../Account/SignOut?username=${currentUser.getName()} '>
                                 <i class='icon-signout'></i>
                                 Sign out
                             </a>
@@ -199,15 +130,15 @@
                     </ul>
                 </li>
             </ul>
-            <form accept-charset="UTF-8" action="search_results.html"
+            <form accept-charset="UTF-8" action="../../Main/Search"
                   class="navbar-search pull-right hidden-phone"
-                  method="get">
+                  method="post">
                 <div style="margin:0;padding:0;display:inline">
                     <input name="utf8" type="hidden" value="&#x2713;"/>
                 </div>
                 <button class="btn btn-link icon-search" name="button" type="submit"></button>
-                <input autocomplete="off" class="search-query span2" id="q_header"
-                       name="q" placeholder="Search..."
+                <input autocomplete="off" class="search-query span2" id="condition"
+                       name="condition" placeholder="Search..."
                        type="text" value=""/>
             </form>
         </div>

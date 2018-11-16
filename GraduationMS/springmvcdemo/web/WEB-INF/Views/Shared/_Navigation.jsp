@@ -56,56 +56,56 @@
         <li>
             <a class='dropdown-collapse ' href='#'>
                 <i class='icon-cogs'></i>
-                <span>Components</span>
+                <span>Demo</span>
                 <i class='icon-angle-down angle-down'></i>
             </a>
             <ul class='nav nav-stacked'>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-bar-chart'></i>
-                        <span>Charts</span>
+                        <span>index</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/buttons_and_icons');">
                         <i class='icon-envelope'></i>
-                        <span>Address book</span>
+                        <span>buttons_and_icons</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/tables');">
                         <i class='icon-comments'></i>
-                        <span>Chats</span>
+                        <span>tables</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/timeline');">
                         <i class='icon-pencil'></i>
-                        <span>In-place editing</span>
+                        <span>timeline</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/inplace_editing');">
                         <i class='icon-list-ul'></i>
-                        <span>File trees</span>
+                        <span>inplace_editing</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/fileupload');">
                         <i class='icon-file'></i>
-                        <span>Fileupload</span>
+                        <span>fileupload</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/todo');">
                         <i class='icon-list-alt'></i>
-                        <span>Todo list</span>
+                        <span>todo</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/form_components');">
                         <i class='icon-paste'></i>
-                        <span>WYSIWYG</span>
+                        <span>form_components</span>
                     </a>
                 </li>
             </ul>
@@ -118,73 +118,73 @@
             </a>
             <ul class='nav nav-stacked'>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/form_styles');">
                         <i class='icon-money'></i>
-                        <span>Invoice</span>
+                        <span>form_styles</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/validations');">
                         <i class='icon-picture'></i>
-                        <span>Gallery</span>
+                        <span>validations</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/wizard');">
                         <i class='icon-time'></i>
-                        <span>Timeline</span>
+                        <span>wizard</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/faq');">
                         <i class='icon-table'></i>
-                        <span>Pricing tables</span>
+                        <span>faq</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/invoice');">
                         <i class='icon-user'></i>
-                        <span>User profile</span>
+                        <span>invoice</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/Index');">
                         <i class='icon-question-sign'></i>
                         <span>404 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-cogs'></i>
                         <span>500 Error</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-signin'></i>
                         <span>Sign in</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-bullhorn'></i>
                         <span>FAQ</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-inbox'></i>
                         <span>Orders</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-search'></i>
                         <span>Search results</span>
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Home/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-circle-blank'></i>
                         <span>Blank page</span>
                     </a>
