@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 21/10/2018
-  Time: 10:15 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <tiles:insertDefinition name="subPage.definition">
     <tiles:putAttribute name="title" value="User Detail"/>

@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 21/10/2018
-  Time: 10:43 PM
-  To change this template use File | Settings | File Templates.
---%>
 <!-- / jquery -->
 <script src='../Scripts/jquery/jquery.min.js' type='text/javascript'></script>
 <!--[if lt IE 9]>

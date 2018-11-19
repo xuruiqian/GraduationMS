@@ -2,7 +2,7 @@ package com.springmvcdemo.Web.Controller;
 
 import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import com.springmvcdemo.DataRepository.Option.AuthorityType;
-import com.springmvcdemo.Web.Authority.Authority;
+import com.springmvcdemo.Web.Annotations.Authority;
 import com.springmvcdemo.Service.Contract.IUserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -33,7 +33,7 @@ public class UserController extends ControllerBase {
     public ModelAndView UserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         IUserService us = (IUserService) applicationContext.getBean("UserService");
-        List<UserWithBLOBs> userList = us.GetUserList();
+        List<UserWithBLOBs> userList = us.GetUsers();
         Map<String, List<UserWithBLOBs>> data = new HashMap<String, List<UserWithBLOBs>>();
         data.put("userList", userList);
 

@@ -2,7 +2,7 @@ package com.springmvcdemo.Web.Controller;
 
 import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import com.springmvcdemo.DataRepository.Option.AuthorityType;
-import com.springmvcdemo.Web.Authority.Authority;
+import com.springmvcdemo.Web.Annotations.Authority;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

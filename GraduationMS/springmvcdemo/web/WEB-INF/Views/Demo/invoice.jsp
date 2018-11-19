@@ -6,11 +6,11 @@
             <div class='row-fluid' id='content-wrapper'>
                 <div class='span12'>
                     <div class='page-header'>
-                        <h1 class='pull-left'>
+                        <h3 class='pull-left'>
                             <i class='icon-money'></i>
                             <span>Invoice</span>
                             <span class='muted'>#001</span>
-                        </h1>
+                        </h3>
                         <div class='pull-right'>
                             <div class='btn-group'>
                                 <a href="#" class="btn"><i class='icon-print'></i>

@@ -55,12 +55,12 @@
 
         if (bIsNumber && !oTable.fnSettings().oFeatures.bServerSide) {
             input.keyup(function () {
-                /* Filter on the column all numbers that starts with the entered value */
+                /* Filters on the column all numbers that starts with the entered value */
                 oTable.fnFilter('^' + this.value, index, true, false);
             });
         } else {
             input.keyup(function () {
-                /* Filter on the column (the index) of this element */
+                /* Filters on the column (the index) of this element */
                 oTable.fnFilter(this.value, index, regex, smart);
             });
         }

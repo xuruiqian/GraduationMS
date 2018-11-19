@@ -1,5 +1,6 @@
-(function() {
-    $(document).ready = function() {};
+(function () {
+    $(document).ready = function () {
+    };
 
     $.extend(true, $.fn.dataTable.defaults, {
         sDom: "<'row-fluid'<'span6'l><'span6'f>r>t<'row-fluid'<'span6'i><'span6'p>>",
@@ -13,7 +14,7 @@
         sWrapper: "dataTables_wrapper form-inline"
     });
 
-    $.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings) {
+    $.fn.dataTableExt.oApi.fnPagingInfo = function (oSettings) {
         return {
             iStart: oSettings._iDisplayStart,
             iEnd: oSettings.fnDisplayEnd(),
@@ -27,11 +28,11 @@
 
     $.extend($.fn.dataTableExt.oPagination, {
         bootstrap: {
-            fnInit: function(oSettings, nPaging, fnDraw) {
+            fnInit: function (oSettings, nPaging, fnDraw) {
                 var els, fnClickHandler, oLang;
 
                 oLang = oSettings.oLanguage.oPaginate;
-                fnClickHandler = function(e) {
+                fnClickHandler = function (e) {
                     e.preventDefault();
                     if (oSettings.oApi._fnPageChange(oSettings, e.data.action)) {
                         return fnDraw(oSettings);
@@ -46,7 +47,7 @@
                     action: "next"
                 }, fnClickHandler);
             },
-            fnUpdate: function(oSettings, fnDraw) {
+            fnUpdate: function (oSettings, fnDraw) {
                 var an, i, iEnd, iHalf, iListLength, iStart, ien, j, oPaging, sClass, _results;
 
                 iListLength = 5;
@@ -80,7 +81,7 @@
                     j = iStart;
                     while (j <= iEnd) {
                         sClass = (j === oPaging.iPage + 1 ? "class=\"active\"" : "");
-                        $("<li " + sClass + "><a href=\"#\">" + j + "</a></li>").insertBefore($("li:last", an[i])[0]).bind("click", function(e) {
+                        $("<li " + sClass + "><a href=\"#\">" + j + "</a></li>").insertBefore($("li:last", an[i])[0]).bind("click", function (e) {
                             e.preventDefault();
                             oSettings._iDisplayStart = (parseInt($("a", this).text(), 10) - 1) * oPaging.iLength;
                             return fnDraw(oSettings);

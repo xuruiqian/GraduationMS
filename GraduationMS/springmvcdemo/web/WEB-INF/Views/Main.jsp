@@ -1,8 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <tiles:insertDefinition name="base.definition">
     <tiles:putAttribute name="title" value="Spring MVC Demo"/>
     <tiles:putAttribute name="body">
-        <iframe id="iframeBody" src="/Home/Index" width='80%' height="100%"
+        <iframe id="iframeBody" src="/Home/Index" width='100%' height="100%" style="margin-right: 10;"
                 frameborder="no" border="0" marginwidth="0" marginheight="0"
                 scrolling="Yes" allowtransparency="yes">
         </iframe>

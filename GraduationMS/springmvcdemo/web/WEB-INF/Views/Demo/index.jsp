@@ -6,10 +6,10 @@
             <div class='row-fluid' id='content-wrapper'>
                 <div class='span12'>
                     <div class='page-header'>
-                        <h1 class='pull-left'>
+                        <h3 class='pull-left'>
                             <i class='icon-dashboard'></i>
                             <span>Dashboard</span>
-                        </h1>
+                        </h3>
                         <div class='pull-right'>
                             <div class='btn-group'>
                                 <a href="#" class="btn btn-white hidden-phone">Last month</a>

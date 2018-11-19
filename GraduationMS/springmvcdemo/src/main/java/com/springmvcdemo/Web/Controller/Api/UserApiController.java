@@ -3,7 +3,7 @@ package com.springmvcdemo.Web.Controller.Api;
 import com.alibaba.fastjson.JSON;
 import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
 import com.springmvcdemo.DataRepository.Option.AuthorityType;
-import com.springmvcdemo.Web.Authority.Authority;
+import com.springmvcdemo.Web.Annotations.Authority;
 import com.springmvcdemo.Web.Controller.ControllerBase;
 import com.springmvcdemo.Service.Contract.IUserService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -24,7 +24,7 @@ public class UserApiController extends ControllerBase {
     public String GetUserSummary() {
         applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         IUserService us = (IUserService) applicationContext.getBean("UserService");
-        List<UserWithBLOBs> userList = us.GetUserList();
+        List<UserWithBLOBs> userList = us.GetUsers();
         String jsonStr = JSON.toJSONString(userList);
         System.out.println("User List JsonStr: " + jsonStr);
 

@@ -8,10 +8,10 @@
                     <div class='row-fluid'>
                         <div class='span12'>
                             <div class='page-header'>
-                                <h1>
+                                <h3>
                                     <i class='icon-bullhorn'></i>
                                     <span>FAQ</span>
-                                </h1>
+                                </h3>
                             </div>
                         </div>
                     </div>

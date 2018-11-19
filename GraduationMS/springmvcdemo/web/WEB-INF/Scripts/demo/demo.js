@@ -1,10 +1,10 @@
-(function() {
-    $(document).ready(function() {
+(function () {
+    $(document).ready(function () {
         var calendarDate, d, m, select2icon, y;
 
         setTimeAgoExample();
         $('#slider').sliderNav();
-        $("#new-event").live('submit', function(e) {
+        $("#new-event").live('submit', function (e) {
             var value;
 
             e.preventDefault();
@@ -19,21 +19,21 @@
         $("#tree2").dynatree({
             checkbox: true,
             selectMode: 2,
-            onSelect: function(select, node) {
+            onSelect: function (select, node) {
                 var selKeys, selNodes;
 
                 selNodes = node.tree.getSelectedNodes();
-                selKeys = $.map(selNodes, function(node) {
+                selKeys = $.map(selNodes, function (node) {
                     return "[" + node.data.key + "]: '" + node.data.title + "'";
                 });
                 return $("#echoSelection2").text(selKeys.join(", "));
             },
-            onClick: function(node, event) {
+            onClick: function (node, event) {
                 if (node.getEventTargetType(event) === "title") {
                     return node.toggleSelect();
                 }
             },
-            onKeydown: function(node, event) {
+            onKeydown: function (node, event) {
                 if (event.which === 32) {
                     node.toggleSelect();
                     return false;
@@ -44,18 +44,18 @@
         $("#tree3").dynatree({
             dnd: {
                 preventVoidMoves: true,
-                onDragStart: function(node) {
+                onDragStart: function (node) {
                     return true;
                 },
-                onDragEnter: function(node, sourceNode) {
+                onDragEnter: function (node, sourceNode) {
                     return ["before", "after"];
                 },
-                onDrop: function(node, sourceNode, hitMode, ui, draggable) {
+                onDrop: function (node, sourceNode, hitMode, ui, draggable) {
                     return sourceNode.move(node, hitMode);
                 }
             }
         });
-        $("#slider-example > span").each(function() {
+        $("#slider-example > span").each(function () {
             var value;
 
             value = parseInt($(this).text(), 10);
@@ -71,7 +71,7 @@
             min: 0,
             max: 500,
             step: 50,
-            slide: function(event, ui) {
+            slide: function (event, ui) {
                 return $("#slider-example1-amount").text("$" + ui.value);
             }
         });
@@ -81,12 +81,12 @@
             min: 0,
             max: 500,
             values: [75, 300],
-            slide: function(event, ui) {
+            slide: function (event, ui) {
                 return $("#slider-example2-amount").text("$" + ui.values[0] + " - $" + ui.values[1]);
             }
         });
         $("#slider-example2-amount").text("$" + $("#slider-example2").slider("values", 0) + " - $" + $("#slider-example2").slider("values", 1));
-        $("#alert-example").click(function() {
+        $("#alert-example").click(function () {
             return bootbox.dialog("This is alert!", [
                 {
                     label: "Okay",
@@ -94,21 +94,21 @@
                 }
             ]);
         });
-        $("#notification1").click(function() {
+        $("#notification1").click(function () {
             return $.jGrowl("Lorem ipsum dolor sit amet...");
         });
-        $("#notification2").click(function() {
+        $("#notification2").click(function () {
             return $.jGrowl("Lorem ipsum dolor sit amet...", {
                 sticky: true
             });
         });
-        select2icon = function(e) {
+        select2icon = function (e) {
             return "<i class='" + e.text + "'></i> ." + e.text;
         };
         $("#select2-icon").select2({
             formatResult: select2icon,
             formatSelection: select2icon,
-            escapeMarkup: function(e) {
+            escapeMarkup: function (e) {
                 return e;
             }
         });
@@ -117,13 +117,13 @@
             tokenSeparators: [",", " "],
             placeholder: "Type your tag here... "
         });
-        $.validator.addMethod("buga", (function(value) {
+        $.validator.addMethod("buga", (function (value) {
             return value === "buga";
         }), "Please enter \"buga\"!");
-        $.validator.methods.equal = function(value, element, param) {
+        $.validator.methods.equal = function (value, element, param) {
             return value === param;
         };
-        $(".todo-list .new-todo").live('submit', function(e) {
+        $(".todo-list .new-todo").live('submit', function (e) {
             var li, todo_name;
 
             todo_name = $(this).find("#todo_name").val();
@@ -137,9 +137,9 @@
             }
             return e.preventDefault();
         });
-        $("#comments-more-activity").click(function(e) {
+        $("#comments-more-activity").click(function (e) {
             $(this).button("loading");
-            setTimeout((function() {
+            setTimeout((function () {
                 var list;
 
                 list = $("#comments-more-activity").parent().parent().find("ul");
@@ -148,9 +148,9 @@
             }), 1000);
             return e.preventDefault();
         });
-        $("#users-more-activity").click(function(e) {
+        $("#users-more-activity").click(function (e) {
             $(this).button("loading");
-            setTimeout((function() {
+            setTimeout((function () {
                 var list;
 
                 list = $("#users-more-activity").parent().parent().find("ul");
@@ -159,18 +159,18 @@
             }), 1000);
             return e.preventDefault();
         });
-        $(".todo-list .remove").live('click', function(e) {
+        $(".todo-list .remove").live('click', function (e) {
             $(this).tooltip("hide");
-            $(this).parents("li").fadeOut(500, function() {
+            $(this).parents("li").fadeOut(500, function () {
                 return $(this).remove();
             });
             return e.preventDefault();
         });
-        $(".todo-list li .important").live('click', function(e) {
+        $(".todo-list li .important").live('click', function (e) {
             $(this).parents("li").toggleClass("important");
             return e.preventDefault();
         });
-        $(".todo-list .check").live('click', function() {
+        $(".todo-list .check").live('click', function () {
             var checkbox;
 
             checkbox = $(this).find("input[type='checkbox']");
@@ -180,21 +180,21 @@
                 return $(this).parents("li").removeClass("done");
             }
         });
-        $(".recent-activity .ok").live('click', function(e) {
+        $(".recent-activity .ok").live('click', function (e) {
             $(this).tooltip("hide");
-            $(this).parents("li").fadeOut(500, function() {
+            $(this).parents("li").fadeOut(500, function () {
                 return $(this).remove();
             });
             return e.preventDefault();
         });
-        $(".recent-activity .remove").live('click', function(e) {
+        $(".recent-activity .remove").live('click', function (e) {
             $(this).tooltip("hide");
-            $(this).parents("li").fadeOut(500, function() {
+            $(this).parents("li").fadeOut(500, function () {
                 return $(this).remove();
             });
             return e.preventDefault();
         });
-        $(".chat .new-message").live('submit', function(e) {
+        $(".chat .new-message").live('submit', function (e) {
             var chat, date, li, message, months, reply, scrollable, sender, timeago;
 
             date = new Date();
@@ -218,7 +218,7 @@
                 });
                 li.effect("highlight", {}, 500);
                 reply = scrollable.find("li").not(":contains('" + sender + "')").first().clone();
-                setTimeout((function() {
+                setTimeout((function () {
                     date = new Date();
                     timeago = reply.find(".timeago");
                     timeago.attr("title", "" + (date.getFullYear()) + "-" + (date.getDate()) + "-" + (date.getMonth() + 1) + " " + (date.getHours()) + ":" + (date.getMinutes()) + ":" + (date.getSeconds()) + " +0200");
@@ -254,14 +254,14 @@
             },
             droppable: true,
             editable: true,
-            eventClick: function(calEvent, jsEvent, view) {
-                return bootbox.confirm("Do you really want to delete selected event?", function(result) {
+            eventClick: function (calEvent, jsEvent, view) {
+                return bootbox.confirm("Do you really want to delete selected event?", function (result) {
                     if (result === true) {
                         return $(".full-calendar-demo").fullCalendar('removeEvents', calEvent.id);
                     }
                 });
             },
-            drop: function(date, allDay) {
+            drop: function (date, allDay) {
                 var copiedEventObject, originalEventObject;
 
                 originalEventObject = $(this).data("eventObject");
@@ -373,7 +373,7 @@
         }
         $("#daterange2").daterangepicker({
             format: "MM/DD/YYYY"
-        }, function(start, end) {
+        }, function (start, end) {
             return $("#daterange2").parent().find("input").first().val(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
         });
         $("#daterange").daterangepicker({
@@ -401,7 +401,7 @@
             showWeekNumbers: true,
             buttonClasses: ["btn-danger"],
             dateLimit: false
-        }, function(start, end) {
+        }, function (start, end) {
             return $("#daterange span").html(start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY"));
         });
         if (localStorage.getItem("content") !== null) {
@@ -411,19 +411,19 @@
             $('body')[0].className = $('body')[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, ' ').replace(/\s\s+/g, ' ').replace(/(^\s|\s$)/g, '');
             $('body').addClass(localStorage.getItem("contrast"));
         }
-        $(".color-settings-body-color > a").hover(function() {
+        $(".color-settings-body-color > a").hover(function () {
             $("#color-settings-body-color").attr("href", $(this).data("change-to"));
             return localStorage.setItem("content", $(this).data("change-to"));
         });
-        return $(".color-settings-contrast-color > a").hover(function() {
+        return $(".color-settings-contrast-color > a").hover(function () {
             $('body')[0].className = $('body')[0].className.replace(/(^|\s)contrast.*?(\s|$)/g, ' ').replace(/\s\s+/g, ' ').replace(/(^\s|\s$)/g, '');
             $('body').addClass($(this).data("change-to"));
             return localStorage.setItem("contrast", $(this).data("change-to"));
         });
     });
 
-    this.setDraggableEvents = function() {
-        return $("#events .external-event").each(function() {
+    this.setDraggableEvents = function () {
+        return $("#events .external-event").each(function () {
             var eventObject;
 
             eventObject = {
@@ -438,7 +438,7 @@
         });
     };
 
-    this.setTimeAgoExample = function(selector) {
+    this.setTimeAgoExample = function (selector) {
         var date, months, timeago;
 
         if (selector == null) {

@@ -16,9 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.springmvcdemo.mapper"/>
-
-        <!--<mapper resource="com/astor/mapper/UserMapper.xml"/>-->
-        <!--<mapper resource="com/astor/mapper/ProfileMapper.xml"/>-->
-    </mappers>
+        <package name="com.springmvcdemo.DataRepository.Mapper"/>
+     </mappers>
 </configuration>

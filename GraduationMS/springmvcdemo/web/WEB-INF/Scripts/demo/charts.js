@@ -1,18 +1,19 @@
-(function() {
+(function () {
     var data, dataset, gd, options, previousLabel, previousPoint, showTooltip, ticks;
 
-    $(document).ready(function() {
-        var blue, data, datareal, getRandomData, green, i, newOrders, options, orange, orders, placeholder, plot, purple, randNumber, randSmallerNumber, red, series, totalPoints, update, updateInterval;
+    $(document).ready(function () {
+        var blue, data, datareal, getRandomData, green, i, newOrders, options, orange, orders, placeholder, plot,
+            purple, randNumber, randSmallerNumber, red, series, totalPoints, update, updateInterval;
 
         red = "#f34541";
         orange = "#f8a326";
         blue = "#00acec";
         purple = "#9564e2";
         green = "#49bf67";
-        randNumber = function() {
+        randNumber = function () {
             return ((Math.floor(Math.random() * (1 + 50 - 20))) + 20) * 800;
         };
-        randSmallerNumber = function() {
+        randSmallerNumber = function () {
             return ((Math.floor(Math.random() * (1 + 40 - 20))) + 10) * 200;
         };
         if ($("#stats-chart1").length !== 0) {
@@ -76,7 +77,7 @@
                 },
                 colors: ["#f34541", "#49bf67"]
             });
-            $("#stats-chart2").bind("plotclick", function(event, pos, item) {
+            $("#stats-chart2").bind("plotclick", function (event, pos, item) {
                 if (item) {
                     return alert("Yeah! You just clicked on point " + item.dataIndex + " in " + item.series.label + ".");
                 }
@@ -111,7 +112,7 @@
         if ($("#stats-chart3").length !== 0) {
             datareal = [];
             totalPoints = 300;
-            getRandomData = function() {
+            getRandomData = function () {
                 var i, prev, res, y;
 
                 if (datareal.length > 0) {
@@ -136,7 +137,7 @@
                 }
                 return res;
             };
-            update = function() {
+            update = function () {
                 plot.setData([getRandomData()]);
                 plot.draw();
                 return setTimeout(update, updateInterval);
@@ -182,10 +183,10 @@
     });
 
     if ($("#stats-chart7").length !== 0) {
-        gd = function(year, month, day) {
+        gd = function (year, month, day) {
             return new Date(year, month, day).getTime();
         };
-        showTooltip = function(x, y, color, contents) {
+        showTooltip = function (x, y, color, contents) {
             return $("<div id=\"tooltip\">" + contents + "</div>").css({
                 position: "absolute",
                 display: "none",
@@ -233,7 +234,7 @@
                 axisLabelFontSizePixels: 12,
                 axisLabelFontFamily: "Verdana, Arial",
                 axisLabelPadding: 3,
-                tickFormatter: function(v, axis) {
+                tickFormatter: function (v, axis) {
                     return v + "Ã‚Â°C";
                 }
             },
@@ -250,14 +251,14 @@
                 }
             }
         };
-        $(document).ready(function() {
+        $(document).ready(function () {
             $.plot($("#stats-chart7"), dataset, options);
             return $("#stats-chart7").UseTooltip();
         });
         previousPoint = null;
         previousLabel = null;
-        $.fn.UseTooltip = function() {
-            return $(this).bind("plothover", function(event, pos, item) {
+        $.fn.UseTooltip = function () {
+            return $(this).bind("plothover", function (event, pos, item) {
                 var color, x, y;
 
                 if (item) {

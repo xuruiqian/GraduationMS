@@ -8,10 +8,10 @@
                     <div class='row-fluid'>
                         <div class='span12'>
                             <div class='page-header'>
-                                <h1 class='pull-left'>
+                                <h3 class='pull-left'>
                                     <i class='icon-ok'></i>
                                     <span>Validations</span>
-                                </h1>
+                                </h3>
                                 <div class='pull-right'>
                                     <ul class='breadcrumb'>
                                         <li>

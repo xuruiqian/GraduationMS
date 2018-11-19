@@ -16,7 +16,14 @@
     <!-- if you use annotation you must configure following setting -->
     <mvc:annotation-driven/>
     <mvc:interceptors>
-        <bean class="com.springmvcdemo.Web.Authority.AuthorityAnnotationInterceptor"></bean>
+        <bean class="com.springmvcdemo.Web.Interceptors.AuthorityAnnotationInterceptor"></bean>
+        <bean class="com.springmvcdemo.Web.Interceptors.CrossDomainInterceptor">
+            <property name="excludedUrls">
+                <list>
+                    <value>/</value>
+                </list>
+            </property>
+        </bean>
     </mvc:interceptors>
     <!--Static resources config: Allow static resources can be request directly.-->
     <mvc:resources mapping="/Scripts/**" location="/WEB-INF/Scripts/"/>

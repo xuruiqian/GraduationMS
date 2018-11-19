@@ -1,5 +1,5 @@
-(function() {
-    $(document).ready(function() {
+(function () {
+    $(document).ready(function () {
         setScrollable();
         setTimeAgo();
         setAutoSize();
@@ -23,18 +23,18 @@
         });
         setDataTable($(".data-table"));
         setDataTable($(".data-table-column-filter")).columnFilter();
-        $(".box .box-remove").click(function(e) {
+        $(".box .box-remove").click(function (e) {
             $(this).parents(".box").first().remove();
             return e.preventDefault();
         });
-        $(".box .box-collapse").click(function(e) {
+        $(".box .box-collapse").click(function (e) {
             var box;
 
             box = $(this).parents(".box").first();
             box.toggleClass("box-collapsed");
             return e.preventDefault();
         });
-        $("body").on("mouseenter", ".has-popover", function() {
+        $("body").on("mouseenter", ".has-popover", function () {
             var el;
 
             el = $(this);
@@ -46,10 +46,10 @@
             }
             return el.popover("show");
         });
-        $("body").on("mouseleave", ".has-popover", function() {
+        $("body").on("mouseleave", ".has-popover", function () {
             return $(this).popover("hide");
         });
-        $("body").on("mouseenter", ".has-tooltip", function() {
+        $("body").on("mouseenter", ".has-tooltip", function () {
             var el;
 
             el = $(this);
@@ -61,10 +61,10 @@
             }
             return el.tooltip("show");
         });
-        $("body").on("mouseleave", ".has-tooltip", function() {
+        $("body").on("mouseleave", ".has-tooltip", function () {
             return $(this).tooltip("hide");
         });
-        $("#check-all").click(function() {
+        $("#check-all").click(function () {
             return $(this).parents("table:eq(0)").find(".only-checkbox :checkbox").attr("checked", this.checked);
         });
         $(".colorpicker-hex").colorpicker({
@@ -74,7 +74,7 @@
             format: "rgb"
         });
         if (!Modernizr.input.placeholder) {
-            $("[placeholder]").focus(function() {
+            $("[placeholder]").focus(function () {
                 var input;
 
                 input = $(this);
@@ -82,17 +82,17 @@
                     input.val("");
                     return input.removeClass("placeholder");
                 }
-            }).blur(function() {
-                    var input;
+            }).blur(function () {
+                var input;
 
-                    input = $(this);
-                    if (input.val() === "" || input.val() === input.attr("placeholder")) {
-                        input.addClass("placeholder");
-                        return input.val(input.attr("placeholder"));
-                    }
-                }).blur();
-            $("[placeholder]").parents("form").submit(function() {
-                return $(this).find("[placeholder]").each(function() {
+                input = $(this);
+                if (input.val() === "" || input.val() === input.attr("placeholder")) {
+                    input.addClass("placeholder");
+                    return input.val(input.attr("placeholder"));
+                }
+            }).blur();
+            $("[placeholder]").parents("form").submit(function () {
+                return $(this).find("[placeholder]").each(function () {
                     var input;
 
                     input = $(this);
@@ -109,37 +109,37 @@
         }
     });
 
-    this.setSelect2 = function(selector) {
+    this.setSelect2 = function (selector) {
         if (selector == null) {
             selector = $(".select2");
         }
-        return selector.each(function(i, elem) {
+        return selector.each(function (i, elem) {
             return $(elem).select2();
         });
     };
 
-    this.setValidateForm = function(selector) {
+    this.setValidateForm = function (selector) {
         if (selector == null) {
             selector = $(".validate-form");
         }
-        return selector.each(function(i, elem) {
+        return selector.each(function (i, elem) {
             return $(elem).validate({
                 errorElement: "span",
                 errorClass: "help-block error",
-                errorPlacement: function(e, t) {
+                errorPlacement: function (e, t) {
                     return t.parents(".controls").append(e);
                 },
-                highlight: function(e) {
+                highlight: function (e) {
                     return $(e).closest(".control-group").removeClass("error success").addClass("error");
                 },
-                success: function(e) {
+                success: function (e) {
                     return e.closest(".control-group").removeClass("error");
                 }
             });
         });
     };
 
-    this.setDataTable = function(selector) {
+    this.setDataTable = function (selector) {
         return selector.dataTable({
             sDom: "<'row-fluid'<'span6'l><'span6 text-right'f>r>t<'row-fluid'<'span6'i><'span6 text-right'p>>",
             sPaginationType: "bootstrap",
@@ -149,14 +149,14 @@
         });
     };
 
-    this.setMaxLength = function(selector) {
+    this.setMaxLength = function (selector) {
         if (selector == null) {
             selector = $(".char-max-length");
         }
         return selector.maxlength();
     };
 
-    this.setCharCounter = function(selector) {
+    this.setCharCounter = function (selector) {
         if (selector == null) {
             selector = $(".char-counter");
         }
@@ -168,14 +168,14 @@
         });
     };
 
-    this.setAutoSize = function(selector) {
+    this.setAutoSize = function (selector) {
         if (selector == null) {
             selector = $(".autosize");
         }
         return selector.autosize();
     };
 
-    this.setTimeAgo = function(selector) {
+    this.setTimeAgo = function (selector) {
         if (selector == null) {
             selector = $(".timeago");
         }
@@ -185,11 +185,11 @@
         return selector.addClass("in");
     };
 
-    this.setScrollable = function(selector) {
+    this.setScrollable = function (selector) {
         if (selector == null) {
             selector = $(".scrollable");
         }
-        return selector.each(function(i, elem) {
+        return selector.each(function (i, elem) {
             return $(elem).slimScroll({
                 height: $(elem).data("scrollable-height"),
                 start: $(elem).data("scrollable-start") || "top"
@@ -197,7 +197,7 @@
         });
     };
 
-    this.setSortable = function(selector) {
+    this.setSortable = function (selector) {
         if (selector == null) {
             selector = null;
         }

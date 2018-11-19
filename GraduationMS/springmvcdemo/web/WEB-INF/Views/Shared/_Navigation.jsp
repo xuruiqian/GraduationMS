@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 21/10/2018
-  Time: 10:44 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <div class='navigation'>
     <div class='search'>
         <form accept-charset="UTF-8" method="get">
@@ -148,7 +143,7 @@
                     </a>
                 </li>
                 <li class=''>
-                    <a href="javascript:ShowLeftSubPage('../../Demo/Index');">
+                    <a href="javascript:ShowLeftSubPage('../../Demo/index');">
                         <i class='icon-question-sign'></i>
                         <span>404 Error</span>
                     </a>

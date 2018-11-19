@@ -1,12 +1,7 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 21/10/2018
-  Time: 8:40 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%
     UserWithBLOBs currentUser = (UserWithBLOBs) request.getSession().getAttribute("currentUser");
 %>

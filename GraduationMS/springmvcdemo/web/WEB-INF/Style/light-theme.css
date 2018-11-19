@@ -1708,7 +1708,7 @@ h1 [class^="icon-"] {
     margin-top: 0;
     color: #222222;
     background: white;
-    padding: 22px 20px;
+    padding: 5px;
     *zoom: 1;
 }
 
@@ -2170,7 +2170,7 @@ header .navbar .nav > li > a:focus, header .navbar .nav > li > a:hover {
 }
 
 #main-nav {
-    width: 250px;
+    width: 20%;
     float: left;
 }
 
@@ -2587,7 +2587,8 @@ body.fixed-header #main-nav.main-nav-fixed {
 }
 
 #content {
-    margin-left: 251px;
+    float:left;
+    width: 80%;
     background: #fbfbfb;
     min-width: 276px;
     background: #fbfbfb;

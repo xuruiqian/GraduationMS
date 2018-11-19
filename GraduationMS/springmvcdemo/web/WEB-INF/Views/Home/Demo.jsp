@@ -1,11 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 22/10/2018
-  Time: 7:49 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
 <%!
     private int initVar = 0;
     private int serviceVar = 0;

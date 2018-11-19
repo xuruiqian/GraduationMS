@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ruiqian.xu
-  Date: 21/10/2018
-  Time: 10:43 PM
-  To change this template use File | Settings | File Templates.
---%>
 <!-- / jquery mobile events (for touch and slide) -->
 <script src='../Scripts/plugins/mobile_events/jquery.mobile-events.min.js' type='text/javascript'></script>
 <!-- / jquery migrate (for compatibility with new jquery) -->
