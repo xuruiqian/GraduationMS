@@ -3,7 +3,7 @@
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
+<%@ page import="com.springmvcdemo.Data.Domain.UserWithBLOBs" %>
 <%
     List<UserWithBLOBs> userList = (List<UserWithBLOBs>) request.getAttribute("userList");
 %>

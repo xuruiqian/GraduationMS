@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@ page import="com.springmvcdemo.DataRepository.Domain.UserWithBLOBs" %>
+<%@ page import="com.springmvcdemo.Data.Domain.UserWithBLOBs" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%
     UserWithBLOBs currentUser = (UserWithBLOBs) request.getSession().getAttribute("currentUser");

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.springmvcdemo.Data.Mapper.PermissionGroupPermissionMapper" >
+  <resultMap id="BaseResultMap" type="com.springmvcdemo.Data.Domain.PermissionGroupPermission" >
+    <id column="ID" property="id" jdbcType="CHAR" />
+    <result column="PermissionID" property="permissionid" jdbcType="CHAR" />
+    <result column="PermissionGroupID" property="permissiongroupid" jdbcType="CHAR" />
+    <result column="IsDeleted" property="isdeleted" jdbcType="BIT" />
+    <result column="Remark" property="remark" jdbcType="VARCHAR" />
+    <result column="CreateTime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="UpdateTime" property="updatetime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    ID, PermissionID, PermissionGroupID, IsDeleted, Remark, CreateTime, UpdateTime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_permissiongrouppermission
+    where ID = #{id,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from tb_permissiongrouppermission
+    where ID = #{id,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.springmvcdemo.Data.Domain.PermissionGroupPermission" >
+    insert into tb_permissiongrouppermission (ID, PermissionID, PermissionGroupID, 
+      IsDeleted, Remark, CreateTime, 
+      UpdateTime)
+    values (#{id,jdbcType=CHAR}, #{permissionid,jdbcType=CHAR}, #{permissiongroupid,jdbcType=CHAR}, 
+      #{isdeleted,jdbcType=BIT}, #{remark,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, 
+      #{updatetime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.springmvcdemo.Data.Domain.PermissionGroupPermission" >
+    insert into tb_permissiongrouppermission
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="permissionid != null" >
+        PermissionID,
+      </if>
+      <if test="permissiongroupid != null" >
+        PermissionGroupID,
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted,
+      </if>
+      <if test="remark != null" >
+        Remark,
+      </if>
+      <if test="createtime != null" >
+        CreateTime,
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=CHAR},
+      </if>
+      <if test="permissionid != null" >
+        #{permissionid,jdbcType=CHAR},
+      </if>
+      <if test="permissiongroupid != null" >
+        #{permissiongroupid,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.springmvcdemo.Data.Domain.PermissionGroupPermission" >
+    update tb_permissiongrouppermission
+    <set >
+      <if test="permissionid != null" >
+        PermissionID = #{permissionid,jdbcType=CHAR},
+      </if>
+      <if test="permissiongroupid != null" >
+        PermissionGroupID = #{permissiongroupid,jdbcType=CHAR},
+      </if>
+      <if test="isdeleted != null" >
+        IsDeleted = #{isdeleted,jdbcType=BIT},
+      </if>
+      <if test="remark != null" >
+        Remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatetime != null" >
+        UpdateTime = #{updatetime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.springmvcdemo.Data.Domain.PermissionGroupPermission" >
+    update tb_permissiongrouppermission
+    set PermissionID = #{permissionid,jdbcType=CHAR},
+      PermissionGroupID = #{permissiongroupid,jdbcType=CHAR},
+      IsDeleted = #{isdeleted,jdbcType=BIT},
+      Remark = #{remark,jdbcType=VARCHAR},
+      CreateTime = #{createtime,jdbcType=TIMESTAMP},
+      UpdateTime = #{updatetime,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=CHAR}
+  </update>
+</mapper>

@@ -59,7 +59,7 @@
     // set of data is passed to it.
     function isMockDataEqual(mock, live) {
         var identical = false;
-        // Test for situations where the data is a querystring (not an object)
+        // UnitTest for situations where the data is a querystring (not an object)
         if (typeof live === 'string') {
             // Querystring may be a regex
             return $.isFunction(mock.test) ? mock.test(live) : mock == live;

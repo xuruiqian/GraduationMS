@@ -64,15 +64,34 @@
                         ' <div class="span7"> ' +
                         '  <div class="control-group">' +
                         '   <table class="table">' +
-                        '       <thead><tr><th>User Name</th><th>Password</th></tr> </thead>';
+                        '       <thead>' +
+                        '           <tr>' +
+                        '            <th>User Name</th>' +
+                        '            <th>Password</th>' +
+                        '            <th>Email</th>' +
+                        '            <th>Gender</th>' +
+                        '            <th>Level</th>' +
+                        '            <th>CreateTime</th>' +
+                        '            <th>UpdateTime</th>' +
+                        '            <th>Remark</th>' +
+                        '           </tr>' +
+                        '       </thead>' +
+                        '       <tbody>';
                     $.each(data, function (commentIndex, comment) {
                         html +=
                             '   <tr> ' +
                             '       <td>' + comment['name'] + '</td>' +
                             '       <td>' + comment['password'] + '</td>' +
+                            '       <td>' + comment['Email'] + '</td>' +
+                            '       <td>' + comment['Gender'] + '</td>' +
+                            '       <td>' + comment['Level'] + '</td>' +
+                            '       <td>' + comment['CreateTime'] + '</td>' +
+                            '       <td>' + comment['UpdateTime'] + '</td>' +
+                            '       <td>' + comment['Remark'] + '</td>' +
                             '   </tr>';
                     });
                     html +=
+                        '       </tbody>'+
                         '   </table>' +
                         '  </div>' +
                         ' </div> ';

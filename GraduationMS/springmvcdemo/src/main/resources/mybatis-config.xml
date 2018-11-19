@@ -16,6 +16,6 @@
         </environment>
     </environments>
     <mappers>
-        <package name="com.springmvcdemo.DataRepository.Mapper"/>
+        <package name="com.springmvcdemo.Data.Mapper"/>
      </mappers>
 </configuration>

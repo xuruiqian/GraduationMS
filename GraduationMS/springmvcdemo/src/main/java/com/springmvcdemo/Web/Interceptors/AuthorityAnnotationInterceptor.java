@@ -1,7 +1,7 @@
 package com.springmvcdemo.Web.Interceptors;
 
-import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
-import com.springmvcdemo.DataRepository.Option.AuthorityType;
+import com.springmvcdemo.Data.Domain.UserWithBLOBs;
+import com.springmvcdemo.Data.Option.AuthorityType;
 import com.springmvcdemo.Web.Annotations.Authority;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;

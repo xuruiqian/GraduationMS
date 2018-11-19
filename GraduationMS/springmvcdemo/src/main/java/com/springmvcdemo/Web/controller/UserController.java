@@ -1,7 +1,7 @@
 package com.springmvcdemo.Web.Controller;
 
-import com.springmvcdemo.DataRepository.Domain.UserWithBLOBs;
-import com.springmvcdemo.DataRepository.Option.AuthorityType;
+import com.springmvcdemo.Data.Domain.UserWithBLOBs;
+import com.springmvcdemo.Data.Option.AuthorityType;
 import com.springmvcdemo.Web.Annotations.Authority;
 import com.springmvcdemo.Service.Contract.IUserService;
 import org.apache.commons.logging.Log;
